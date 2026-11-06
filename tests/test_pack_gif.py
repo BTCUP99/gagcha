@@ -15,7 +15,7 @@ class PackGifTest(unittest.TestCase):
         self.frames = Path(tmp.name) / "源帧"
         self.frames.mkdir()
         self.output = Path(tmp.name) / "成品.gif"
-        self.script = Path(__file__).resolve().parents[1] / "skills" / "gif-actions" / "scripts" / "pack_gif.py"
+        self.script = Path(__file__).resolve().parents[1] / "skills" / "gagcha" / "scripts" / "pack_gif.py"
 
     def call(self, *options):
         return subprocess.run([sys.executable, self.script, self.frames, self.output, *options],

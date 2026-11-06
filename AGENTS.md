@@ -13,7 +13,7 @@
 除非用户在当前对话里明确要求：
 
 - 不要 `git commit`、`git push`、`git tag`，不要创建 PR 或 Release。
-- 不要修改 `skills/gif-actions/SKILL.md` 里的版本号和 `CHANGELOG.md`。
+- 不要修改 `skills/gagcha/SKILL.md` 里的版本号和 `CHANGELOG.md`。
 
 改完把文件留在工作目录里，不用提交，告诉用户改了哪些文件就行。
 
@@ -22,7 +22,7 @@
 在项目根目录运行：
 
 ```sh
-python skills/gif-actions/scripts/action.py --check
+python skills/gagcha/scripts/action.py --check
 python tools/build_catalog.py
 python -m unittest discover -s tests
 ```

@@ -2,7 +2,7 @@
 from pathlib import Path
 import unittest
 
-SKILL = Path(__file__).resolve().parents[1] / "skills" / "gif-actions"
+SKILL = Path(__file__).resolve().parents[1] / "skills" / "gagcha"
 
 
 def skill_text():

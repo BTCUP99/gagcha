@@ -8,7 +8,7 @@ import unittest
 
 from PIL import Image, ImageChops, ImageDraw, ImageStat
 
-SCRIPTS=Path(__file__).resolve().parents[1]/"skills"/"gif-actions"/"scripts"
+SCRIPTS=Path(__file__).resolve().parents[1]/"skills"/"gagcha"/"scripts"
 
 def tool(name,*args):
     return subprocess.run([sys.executable,SCRIPTS/name,*map(str,args)],capture_output=True,text=True,encoding="utf-8")

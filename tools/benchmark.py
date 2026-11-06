@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "skills" / "gif-actions" / "scripts"))
+sys.path.insert(0, str(ROOT / "skills" / "gagcha" / "scripts"))
 import action
 
 

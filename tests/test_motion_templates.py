@@ -7,7 +7,7 @@ import subprocess
 import sys
 import unittest
 
-SCRIPT = Path(__file__).resolve().parents[1] / "skills/gif-actions/scripts/action.py"
+SCRIPT = Path(__file__).resolve().parents[1] / "skills/gagcha/scripts/action.py"
 SPEC = importlib.util.spec_from_file_location("gif_action_templates", SCRIPT)
 ACTION = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(ACTION)

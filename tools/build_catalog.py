@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-SKILL=ROOT/"skills"/"gif-actions"
+SKILL=ROOT/"skills"/"gagcha"
 sys.path.insert(0,str(SKILL/"scripts"))
 from action import AUDIENCES, FAMILIES, GAGS, INTENSITIES, MOTIONS, STYLE_GROUPS, validate, validate_layers, validate_templates
 
@@ -29,7 +29,7 @@ def main():
         raise ValueError("证据索引含无效动作 ID 或来源")
     lines=["# 中文 GIF 动作图鉴","",f"{len(cards)} 张动作卡 · {len(set(c['family'] for c in cards))} 类 · {len(styles)} 种风格 · {len(templates)} 个动作模板 · {len(packs)} 套表情包。每张卡给出可见的爆点与三拍建议；用技能命令 `python scripts/action.py --id 动作ID --brief` 查看。","",
            "新创作没说数量时先确认做 6 款还是 9 款，用户明确指定的数量优先。已有成品的改字、调速等局部修改只处理指定文件，本地处理优先；有干净源帧时换字幕不再生成。九宫格是成品 GIF 的集中预览，不是 9 帧或静态候选。新创作每款一次生成尝试，只做一次自动编码与可播放检查；不先出锚点、不等前三张确认、不自动重抽或反复视觉修补。失败项如实列出，其余款继续。","",
-           "可按同一句话多种演法、同主体多种反应、同场景多种用途组织，也可组合。动作卡负责聊天语义，模板负责姿势骨架，笑点手册负责口语气质与笑点，风格库负责视觉，场景包负责可用回复。一组不是固定模板组合。输入与修改边界见[需求理解](skills/gif-actions/references/requests.md)。","",
+           "可按同一句话多种演法、同主体多种反应、同场景多种用途组织，也可组合。动作卡负责聊天语义，模板负责姿势骨架，笑点手册负责口语气质与笑点，风格库负责视觉，场景包负责可用回复。一组不是固定模板组合。输入与修改边界见[需求理解](skills/gagcha/references/requests.md)。","",
            "依据栏标识该表达有何参照，表里的分镜均由项目创作。标为“创作提案”的动作没有附带平台流行度的断言。",""]
     for code,source in sources.items():
         lines.append(f"- **{code}** {source['meaning']} [{source['name']}]({source['url']})")

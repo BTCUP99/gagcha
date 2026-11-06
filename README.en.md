@@ -1,12 +1,14 @@
 <div align="center">
 
-# GIF Action Skills
+# Gagcha
 
-**Turn one sentence into a set of Chinese reaction GIFs worth sending.**
+**One sentence or one image, a whole set of Chinese reaction GIFs.**
+
+<sub>Gag + Gacha: every take is a draw.</sub>
 
 <p>
-  <a href="https://github.com/BTCUP99/gif-action-skills/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/BTCUP99/gif-action-skills/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://github.com/BTCUP99/gif-action-skills/releases"><img alt="Release" src="https://img.shields.io/github/v/release/BTCUP99/gif-action-skills?include_prereleases"></a>
+  <a href="https://github.com/BTCUP99/gagcha/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/BTCUP99/gagcha/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/BTCUP99/gagcha/releases"><img alt="Release" src="https://img.shields.io/github/v/release/BTCUP99/gagcha?include_prereleases"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-8b5cf6"></a>
   <img alt="Python 3.9+" src="https://img.shields.io/badge/python-3.9%2B-3776ab">
   <img alt="Codex Skill" src="https://img.shields.io/badge/Codex-Skill-00a67e">
@@ -70,7 +72,7 @@ A new batch can use any combination of three structures:
 | Multiple images | Use clear roles and relationships as needed; ask only about consequential ambiguity |
 | Existing GIFs | Caption and speed changes affect only the requested files, using local processing first. Clean source frames allow caption replacement without generation. “Another batch” or “nine new actions” starts a new creation |
 
-“Discuss first” or “wait for confirmation” pauses generation. Once creation is requested, “use your judgment” allows production without an extra selection gate; brainstorming freely during a discussion still means proposals only. See [request interpretation](skills/gif-actions/references/requests.md).
+“Discuss first” or “wait for confirmation” pauses generation. Once creation is requested, “use your judgment” allows production without an extra selection gate; brainstorming freely during a discussion still means proposals only. See [request interpretation](skills/gagcha/references/requests.md).
 
 ## What a new creation delivers
 
@@ -91,16 +93,16 @@ Each resource has a role: action cards supply conversational meaning, templates 
 This skill targets Codex. On macOS or Linux:
 
 ```sh
-git clone https://github.com/BTCUP99/gif-action-skills.git
-cd gif-action-skills
-python -m pip install -r skills/gif-actions/requirements.txt
+git clone https://github.com/BTCUP99/gagcha.git
+cd gagcha
+python -m pip install -r skills/gagcha/requirements.txt
 mkdir -p ~/.agents/skills
-ln -s "$PWD/skills/gif-actions" ~/.agents/skills/gif-actions
+ln -s "$PWD/skills/gagcha" ~/.agents/skills/gagcha
 ```
 
-Then ask Codex: **"Use $gif-actions to make a set of stickers about hiding a phone as a coworker walks by."** It asks whether you want 6 or 9 first. Attach a reference image if you have one.
+Then ask Codex: **"Use $gagcha to make a set of stickers about hiding a phone as a coworker walks by."** It asks whether you want 6 or 9 first. Attach a reference image if you have one.
 
-The tools need Python 3.9+ and Pillow. Run `git pull --ff-only` in this folder to update; new Codex sessions pick it up. You can also download a zip from [Releases](https://github.com/BTCUP99/gif-action-skills/releases) and unpack it into `~/.agents/skills/`.
+The tools need Python 3.9+ and Pillow. Run `git pull --ff-only` in this folder to update; new Codex sessions pick it up. You can also download a zip from [Releases](https://github.com/BTCUP99/gagcha/releases) and unpack it into `~/.agents/skills/`.
 
 ## How GIFs are produced
 
@@ -108,7 +110,7 @@ Just say what you want. Codex uses whatever it currently has, with no setup and 
 
 ## Manual use
 
-From `skills/gif-actions`:
+From `skills/gagcha`:
 
 ```sh
 python scripts/action.py "画大饼" --brief --style doodle-meme --intensity absurd

@@ -1,9 +1,9 @@
 ---
-name: gif-actions
+name: gagcha
 description: 用纯文字、聊天语境或参考图制作搞怪 GIF；新创作先确认做 6 款还是 9 款，每款一个玩法、只抽一次。支持真人与宠物辨识、角色或场景套图、姿势模板及跨画风探索，也能局部修改指定成品的字幕和节奏。
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 1.0.1
 ---
 
 # 一次需求，一组搞怪 GIF
