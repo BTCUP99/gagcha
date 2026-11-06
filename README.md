@@ -46,7 +46,7 @@
 | **有点离谱** | **不想动了** | **香迷糊了** |
 | ![有点离谱](examples/showcase/one-reference/magnifier.gif) | ![不想动了](examples/showcase/one-reference/flop.gif) | ![香迷糊了](examples/showcase/one-reference/perfume-cloud.gif) |
 
-同一张参考图由 Codex 使用本技能做出的六款。
+同一张 AI 生成的写真（非真人），由 Codex 使用本技能做出的六款。
 
 ### 没有参考图也能做
 
