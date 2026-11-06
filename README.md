@@ -1,12 +1,14 @@
 <div align="center">
 
-# GIF Action Skills
+# Gagcha 笑抽
 
-**一句话，抽出一组能拿去回消息的中文动图表情。**
+**一句话或一张图，抽出一组能拿去回消息的中文搞怪 GIF。**
+
+<sub>Gag（笑点）+ Gacha（抽卡）</sub>
 
 <p>
-  <a href="https://github.com/BTCUP99/gif-action-skills/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/BTCUP99/gif-action-skills/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://github.com/BTCUP99/gif-action-skills/releases"><img alt="Release" src="https://img.shields.io/github/v/release/BTCUP99/gif-action-skills?include_prereleases"></a>
+  <a href="https://github.com/BTCUP99/gagcha/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/BTCUP99/gagcha/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/BTCUP99/gagcha/releases"><img alt="Release" src="https://img.shields.io/github/v/release/BTCUP99/gagcha?include_prereleases"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-8b5cf6"></a>
   <img alt="Python 3.9+" src="https://img.shields.io/badge/python-3.9%2B-3776ab">
   <img alt="Codex Skill" src="https://img.shields.io/badge/Codex-Skill-00a67e">
@@ -19,7 +21,7 @@
 这个 Codex 技能把聊天语气变成动作：选一个能回消息的意思，配上夸张、反差或荒诞的玩法，生成可播放的 GIF。**没说数量时，它会先问你做 6 款还是 9 款，然后一次做完，每款生成一次，交给你挑。** 你明确说“一张”“三张”或“12 张”，就按你要的数量做；修改已有成品时，只处理你指定的那几款。
 
 > [!NOTE]
-> **创作抽卡。** 每个玩法只生成一次，不承诺每款都命中笑点。完成一次自动播放检查后，交付成功的独立 GIF 和集中预览，并列出失败项。动作卡与模板是创作提案，尚未全部出片验证。遇到问题欢迎[提交反馈](https://github.com/BTCUP99/gif-action-skills/issues/new/choose)。
+> **创作抽卡。** 每个玩法只生成一次，不承诺每款都命中笑点。完成一次自动播放检查后，交付成功的独立 GIF 和集中预览，并列出失败项。动作卡与模板是创作提案，尚未全部出片验证。遇到问题欢迎[提交反馈](https://github.com/BTCUP99/gagcha/issues/new/choose)。
 
 > “破防了，来一张。”
 > “老板又画大饼，用我的饭团角色，抽象一点。”（先问 6 款还是 9 款）
@@ -89,7 +91,7 @@
 | 多张图片 | 角色及关系清楚就按需使用；影响结果的关系不清楚时，只问关键歧义 |
 | 已有成品 | 改字、调速等只修改目标文件，本地处理优先；有干净源帧时换字幕无需重新生成。“再来一组”“做九个新动作”才按新创作处理 |
 
-说“先讨论”或“确认后再做”，就先停在讨论；已经要求开始制作并让你“自由发挥”，就直接组合，不增加选项确认。讨论中的“自由发挥几个方案”仍然只提供方案。详细规则见[需求理解](skills/gif-actions/references/requests.md)。
+说“先讨论”或“确认后再做”，就先停在讨论；已经要求开始制作并让你“自由发挥”，就直接组合，不增加选项确认。讨论中的“自由发挥几个方案”仍然只提供方案。详细规则见[需求理解](skills/gagcha/references/requests.md)。
 
 ## 新创作会拿到什么
 
@@ -99,7 +101,7 @@
 
 ## 怎样设计玩法
 
-- **笑点是设计出来的。** 八种笑点机制（反差、升级、崩坏、冷面、反转、字面、尺度、真诚）告诉模型为什么好笑，比“搞笑一点”具体得多。见[笑点手册](skills/gif-actions/references/comedy.md)。
+- **笑点是设计出来的。** 八种笑点机制（反差、升级、崩坏、冷面、反转、字面、尺度、真诚）告诉模型为什么好笑，比“搞笑一点”具体得多。见[笑点手册](skills/gagcha/references/comedy.md)。
 - **强度可调。** 同一张卡分克制、夸张、抽象三档：“好累”可以是长出一口气，也可以是流成一滩。
 - **懂得看场合。** 每张卡标注工作群可用、朋友同事或仅熟人，说清发给谁就能自动过滤。
 - **真人参考也能放开演。** 锁定基本特征与轮廓，让人认得出是谁；可以跨画风、大头、笑哭、颜艺和夸张变形。每次生成都实际传入原图，不靠文字描述替代。只有明确说“写实”“保留照片质感”时才锁定媒介，写实角色也可以大胆表演。
@@ -113,16 +115,16 @@
 本技能面向 Codex。下载后把技能链接到个人技能目录（macOS / Linux）：
 
 ```sh
-git clone https://github.com/BTCUP99/gif-action-skills.git
-cd gif-action-skills
-python -m pip install -r skills/gif-actions/requirements.txt
+git clone https://github.com/BTCUP99/gagcha.git
+cd gagcha
+python -m pip install -r skills/gagcha/requirements.txt
 mkdir -p ~/.agents/skills
-ln -s "$PWD/skills/gif-actions" ~/.agents/skills/gif-actions
+ln -s "$PWD/skills/gagcha" ~/.agents/skills/gagcha
 ```
 
-然后在 Codex 里说：**“用 $gif-actions，给我做一组同事路过时慌忙收起摸鱼道具的表情。”** 它会先问你做 6 款还是 9 款；想只做一张，就明确说“只做一张”。有参考图就一起发。
+然后在 Codex 里说：**“用 $gagcha，给我做一组同事路过时慌忙收起摸鱼道具的表情。”** 它会先问你做 6 款还是 9 款；想只做一张，就明确说“只做一张”。有参考图就一起发。
 
-工具需要 Python 3.9+ 和 Pillow。以后在这个目录运行 `git pull --ff-only` 就能更新到最新版，新开的 Codex 会话会直接用上。不想用 Git，也可以从 [Releases](https://github.com/BTCUP99/gif-action-skills/releases) 下载压缩包，解压到 `~/.agents/skills/`。
+工具需要 Python 3.9+ 和 Pillow。以后在这个目录运行 `git pull --ff-only` 就能更新到最新版，新开的 Codex 会话会直接用上。不想用 Git，也可以从 [Releases](https://github.com/BTCUP99/gagcha/releases) 下载压缩包，解压到 `~/.agents/skills/`。
 
 ## 怎样出片
 
@@ -137,7 +139,7 @@ ln -s "$PWD/skills/gif-actions" ~/.agents/skills/gif-actions
 
 ## 也可以手动使用
 
-在 `skills/gif-actions` 目录下运行：
+在 `skills/gagcha` 目录下运行：
 
 ```sh
 python scripts/action.py "画大饼" --brief --style doodle-meme --intensity absurd   # 导演说明
@@ -161,7 +163,7 @@ python scripts/inspect_gif.py 带字.gif --json                                 
 
 ## 参与贡献
 
-欢迎提交新动作、模板、风格、表情包和热梗，见[贡献指南](CONTRIBUTING.md)。可以直接[提一个新动作](https://github.com/BTCUP99/gif-action-skills/issues/new?template=new_action.yml)，不需要写代码。
+欢迎提交新动作、模板、风格、表情包和热梗，见[贡献指南](CONTRIBUTING.md)。可以直接[提一个新动作](https://github.com/BTCUP99/gagcha/issues/new?template=new_action.yml)，不需要写代码。
 
 ## 路线图
 

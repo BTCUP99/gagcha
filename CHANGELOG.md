@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-07
+
+### 变更
+
+- 项目更名为 Gagcha 笑抽，仓库改为 `BTCUP99/gagcha`，技能调用名改为 `$gagcha`。已安装旧名称的用户需要按 README 重新链接。
+- README 第二组样片标明为 AI 生成。
+
 ## [1.0.0] - 2026-11-07
 
 首个正式版本。一句话或一张图，做出一组玩法各不相同的中文搞怪 GIF。这是创作抽卡，不是精修工具：每款只生成一次，粗糙和意外也是笑点的一部分，不满意的款直接点名修改。
@@ -30,4 +37,5 @@
 - `inspect_gif.py`：读取帧数和时长、提取逐帧，用于本地修改和排错。
 - `pack_gif.py`、`split_sheet.py`：编码和拆帧。
 
-[1.0.0]: https://github.com/BTCUP99/gif-action-skills/releases/tag/v1.0.0
+[1.0.1]: https://github.com/BTCUP99/gagcha/releases/tag/v1.0.1
+[1.0.0]: https://github.com/BTCUP99/gagcha/releases/tag/v1.0.0

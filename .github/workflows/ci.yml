@@ -33,9 +33,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends fonts-noto-cjk
       - name: Install dependencies
-        run: python -m pip install -r skills/gif-actions/requirements.txt
+        run: python -m pip install -r skills/gagcha/requirements.txt
       - name: Validate the catalog
-        run: python skills/gif-actions/scripts/action.py --check
+        run: python skills/gagcha/scripts/action.py --check
       - name: Check that CATALOG.md is up to date
         run: |
           python tools/build_catalog.py

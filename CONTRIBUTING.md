@@ -12,13 +12,13 @@
 
 ## 需求与素材的分工
 
-新创作可以组织为“同一句话九演法”“同主体九反应”“同场景九用途”，也可以组合。没有主体的文字允许跨人物、宠物或物件；文字指定主体时保留其特征，明确要求统一角色时整组统一。图片提供辨识约束，图加文字时由文字确定意图和限制。多图角色关系清楚就按需使用，只有关键歧义才询问。用户要求先讨论或确认后制作时暂停生成；明确开始制作并让你自由发挥时，不增加选择确认。完整规则维护在 [requests.md](skills/gif-actions/references/requests.md)，不为这些分支另建流程系统。
+新创作可以组织为“同一句话九演法”“同主体九反应”“同场景九用途”，也可以组合。没有主体的文字允许跨人物、宠物或物件；文字指定主体时保留其特征，明确要求统一角色时整组统一。图片提供辨识约束，图加文字时由文字确定意图和限制。多图角色关系清楚就按需使用，只有关键歧义才询问。用户要求先讨论或确认后制作时暂停生成；明确开始制作并让你自由发挥时，不增加选择确认。完整规则维护在 [requests.md](skills/gagcha/references/requests.md)，不为这些分支另建流程系统。
 
 动作卡负责聊天语义，模板负责姿势骨架，笑点手册负责口语气质与笑点，风格库负责视觉，场景包负责可用回复集合。新素材要补充其负责的能力，避免把某次创作的角色、道具或固定组合写成默认规则。说明与示例使用通用人物、宠物或物件，不复制用户的私人参考图。
 
 ## 添加动作
 
-编辑 [actions.json](skills/gif-actions/references/actions.json)。同一动作的新叫法放进已有卡片的 `aliases`，能演出不同意思的才新建卡片。
+编辑 [actions.json](skills/gagcha/references/actions.json)。同一动作的新叫法放进已有卡片的 `aliases`，能演出不同意思的才新建卡片。
 
 | 字段 | 要求 |
 | --- | --- |
@@ -27,10 +27,10 @@
 | `family` | 类目，见 `scripts/action.py` 的 `FAMILIES` |
 | `aliases` | 聊天里真实会说的话 |
 | `beat` | 三拍：起势、爆点、收束。写看得见的动作；收束可回环，也可停在结果硬切 |
-| `loop` | `reset`、`match`、`pingpong`、`occlusion`、`cycle`、`hold`，含义见 [action.py](skills/gif-actions/scripts/action.py) 的 `LOOPS` |
+| `loop` | `reset`、`match`、`pingpong`、`occlusion`、`cycle`、`hold`，含义见 [action.py](skills/gagcha/scripts/action.py) 的 `LOOPS` |
 | `subjects` | `human`、`mascot`、`pet`、`object`、`text` |
 | `mood`、`camera` | 语气和机位 |
-| `gag` | 笑点机制，见[笑点手册](skills/gif-actions/references/comedy.md) |
+| `gag` | 笑点机制，见[笑点手册](skills/gagcha/references/comedy.md) |
 | `intensity` | `restrained`、`exaggerated`、`absurd` |
 | `audience` | `safe`、`casual`、`close` |
 | `motion` | `action`（动作变化，可用关键姿势粗跳、停顿和硬切）或 `light`（一个姿势就能读懂，同时要写 `preset`） |
@@ -40,7 +40,7 @@
 
 ## 添加动作模板
 
-编辑 [motion-templates.json](skills/gif-actions/references/motion-templates.json)。模板只描述可以复用的动作结构，把角色身份、道具和局部细节留作槽位；同一个模板应能演出不止一种意思。
+编辑 [motion-templates.json](skills/gagcha/references/motion-templates.json)。模板只描述可以复用的动作结构，把角色身份、道具和局部细节留作槽位；同一个模板应能演出不止一种意思。
 
 | 字段 | 要求 |
 | --- | --- |
@@ -52,13 +52,13 @@
 | `adaptations` | 不同主体的演法，避免把人的手脚机械套到宠物或物件上 |
 | `timing` | 各关键姿势的 `holds_ms`、`loop` 和节奏说明 `note` |
 
-用 `python skills/gif-actions/scripts/action.py --list-templates` 查看列表，用 `--template snap-freeze` 展开。新增模板后运行 `--check` 与图鉴生成脚本。不要为了收录一个模板先批量生成媒体。
+用 `python skills/gagcha/scripts/action.py --list-templates` 查看列表，用 `--template snap-freeze` 展开。新增模板后运行 `--check` 与图鉴生成脚本。不要为了收录一个模板先批量生成媒体。
 
 ## 添加风格、表情包和热梗
 
-- **风格**（[styles.json](skills/gif-actions/references/styles.json)）：写可执行的视觉描述和要避免的问题，不写艺术家或 IP 的名字。可以粗糙、丑萌、抠图、混搭；不要把精致或统一材质当作唯一目标。
-- **表情包**（[packs.json](skills/gif-actions/references/packs.json)）：列出候选动作 ID 和默认风格。动作之间要有足够差异；包内候选数量不覆盖用户本次要求或默认交付数量。
-- **热梗**（[trends.json](skills/gif-actions/references/trends.json)）：写说法、释义、对应动作和收录日期。过气的梗可以提交删除。
+- **风格**（[styles.json](skills/gagcha/references/styles.json)）：写可执行的视觉描述和要避免的问题，不写艺术家或 IP 的名字。可以粗糙、丑萌、抠图、混搭；不要把精致或统一材质当作唯一目标。
+- **表情包**（[packs.json](skills/gagcha/references/packs.json)）：列出候选动作 ID 和默认风格。动作之间要有足够差异；包内候选数量不覆盖用户本次要求或默认交付数量。
+- **热梗**（[trends.json](skills/gagcha/references/trends.json)）：写说法、释义、对应动作和收录日期。过气的梗可以提交删除。
 
 ## 内容边界
 
@@ -68,14 +68,14 @@
 
 ## 使用依据
 
-没有依据的动作标为“创作提案”，这样完全没问题。如果有公开使用依据，在 [evidence.json](skills/gif-actions/references/evidence.json) 里按 ID 关联来源。不要写“最流行”这类无法核实的说法。
+没有依据的动作标为“创作提案”，这样完全没问题。如果有公开使用依据，在 [evidence.json](skills/gagcha/references/evidence.json) 里按 ID 关联来源。不要写“最流行”这类无法核实的说法。
 
 ## 提交前检查
 
 在项目根目录运行：
 
 ```sh
-python skills/gif-actions/scripts/action.py --check
+python skills/gagcha/scripts/action.py --check
 python tools/build_catalog.py
 python -m unittest discover -s tests
 python tools/benchmark.py   # 查看命中率和未命中的词
@@ -92,11 +92,11 @@ python tools/benchmark.py   # 查看命中率和未命中的词
 把技能链接到工作目录，改动立刻生效，不用反复安装：
 
 ```sh
-git clone https://github.com/BTCUP99/gif-action-skills.git
-cd gif-action-skills
-python -m pip install -r skills/gif-actions/requirements.txt
+git clone https://github.com/BTCUP99/gagcha.git
+cd gagcha
+python -m pip install -r skills/gagcha/requirements.txt
 mkdir -p ~/.agents/skills
-ln -s "$PWD/skills/gif-actions" ~/.agents/skills/gif-actions
+ln -s "$PWD/skills/gagcha" ~/.agents/skills/gagcha
 ```
 
 `ln -s` 只需运行一次，之后 Codex 用的就是这个目录当前的内容，包括还没提交的改动。改完开一个新的 Codex 会话，就能用上新版本。
@@ -129,13 +129,13 @@ git switch main && git pull --ff-only
 
 发版时：
 
-1. 把 `[Unreleased]` 改成版本号和日期，并同步 `skills/gif-actions/SKILL.md` 里的 `version`，走 PR 合入 `main`。
+1. 把 `[Unreleased]` 改成版本号和日期，并同步 `skills/gagcha/SKILL.md` 里的 `version`，走 PR 合入 `main`。
 2. 打标签并推送：
 
    ```sh
    git switch main && git pull --ff-only
-   git tag -a v1.0.1 -m "GIF Action Skills 1.0.1"
-   git push origin v1.0.1
+   git tag -a v1.0.2 -m "Gagcha 1.0.2"
+   git push origin v1.0.2
    ```
 
 推送标签后，[Release 工作流](.github/workflows/release.yml) 会跑测试、核对版本号、打包技能目录，并用更新记录的对应章节发布 GitHub Release。压缩包不提交进仓库。

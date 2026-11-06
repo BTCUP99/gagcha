@@ -5,7 +5,7 @@ import subprocess
 import sys
 import unittest
 
-SCRIPT=Path(__file__).resolve().parents[1]/"skills"/"gif-actions"/"scripts"/"action.py"
+SCRIPT=Path(__file__).resolve().parents[1]/"skills"/"gagcha"/"scripts"/"action.py"
 
 def run(*args):
     return subprocess.run([sys.executable,SCRIPT,*args],capture_output=True,text=True,encoding="utf-8")

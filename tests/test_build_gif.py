@@ -7,7 +7,7 @@ import unittest
 
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageStat
 
-SCRIPT=Path(__file__).resolve().parents[1]/"skills"/"gif-actions"/"scripts"/"build_gif.py"
+SCRIPT=Path(__file__).resolve().parents[1]/"skills"/"gagcha"/"scripts"/"build_gif.py"
 RED=(220,40,40,255)
 
 def frames_of(path):
