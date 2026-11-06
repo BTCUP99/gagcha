@@ -1,0 +1,191 @@
+{
+  "sources": {
+    "微信点击": {
+      "meaning": "2018 年微信面板点击统计举例；这里仅对照表达。",
+      "name": "新华网转述腾讯回应",
+      "url": "https://www.xinhuanet.com/politics/2019-01/11/c_1123974439.htm"
+    },
+    "QQ观察": {
+      "meaning": "QQ 团队公开的黄脸表情研究与设计场景。",
+      "name": "腾讯 ISUX，2020",
+      "url": "https://isux.tencent.com/articles/qq-emoticons-design.html"
+    },
+    "QQ设计": {
+      "meaning": "QQ 团队发布过表达这种意图的动态表情，其动作仅作主题参照。",
+      "name": "腾讯 ISUX，2021",
+      "url": "https://isux.tencent.com/articles/HD_QQ_emoticon.html"
+    },
+    "GIF目录": {
+      "meaning": "Tenor 的反应 GIF 标签中收录了该语义；仅作跨平台参照。",
+      "name": "Tenor Reactions",
+      "url": "https://tenor.com/en-GB/reactions"
+    },
+    "群聊研究": {
+      "meaning": "微信研究观察到相关使用语境；创作卡中的角色、具体演法由项目设计。",
+      "name": "微信 Z 世代问卷及文献综述",
+      "url": "https://doi.org/10.3389/fpsyg.2026.1730328"
+    },
+    "微信群样本": {
+      "meaning": "2018 年亲友、家人、同学微信群语料中有对应表情；样本支持语义。",
+      "name": "Li & Yang，2018",
+      "url": "https://link.springer.com/article/10.1186/s40862-018-0057-z"
+    },
+    "微信田野": {
+      "meaning": "研究记录了日常问候或节庆祝福等用途；具体分镜为本项目创作。",
+      "name": "Wang & Haapio-Kirk，2021",
+      "url": "https://journals.sagepub.com/doi/10.1177/20594364211008044"
+    },
+    "中文语料": {
+      "meaning": "中文聊天与贴纸样本中出现相应的交流意图；使用意图不等于动作频率。",
+      "name": "Shi 等",
+      "url": "https://arxiv.org/abs/2405.08427"
+    }
+  },
+  "actions": {
+    "double-thumbs-bounce": [
+      "微信点击",
+      "GIF目录",
+      "微信群样本"
+    ],
+    "paw-cover-grin": [
+      "微信点击"
+    ],
+    "frozen-polite-smile": [
+      "QQ观察",
+      "GIF目录"
+    ],
+    "desk-shaking-laugh": [
+      "QQ观察",
+      "GIF目录"
+    ],
+    "fold-over-laugh": [
+      "QQ观察",
+      "GIF目录"
+    ],
+    "silent-laugh-recoil": [
+      "QQ观察",
+      "GIF目录"
+    ],
+    "cross-arm-nope": [
+      "QQ观察",
+      "GIF目录"
+    ],
+    "sip-and-look-away": [
+      "QQ观察"
+    ],
+    "heart-hands-pulse": [
+      "QQ设计"
+    ],
+    "confetti-hop": [
+      "QQ设计",
+      "GIF目录"
+    ],
+    "jaw-drop-freeze": [
+      "QQ设计",
+      "GIF目录"
+    ],
+    "steam-ear-puff": [
+      "QQ设计",
+      "GIF目录"
+    ],
+    "star-eyes-rise": [
+      "QQ设计"
+    ],
+    "paper-flame-puff": [
+      "QQ设计"
+    ],
+    "small-paw-wave": [
+      "GIF目录"
+    ],
+    "deep-bow-thanks": [
+      "GIF目录",
+      "中文语料"
+    ],
+    "hand-over-heart-thanks": [
+      "GIF目录"
+    ],
+    "blanket-cocoon-hug": [
+      "GIF目录"
+    ],
+    "cheek-nuzzle": [
+      "GIF目录"
+    ],
+    "slow-standing-applause": [
+      "GIF目录"
+    ],
+    "drooping-ears": [
+      "GIF目录"
+    ],
+    "teardrop-puddle": [
+      "GIF目录"
+    ],
+    "long-stretch-sigh": [
+      "GIF目录"
+    ],
+    "sleepy-head-nod": [
+      "GIF目录"
+    ],
+    "three-beat-freeze-dance": [
+      "GIF目录"
+    ],
+    "melt-over-desk": [
+      "群聊研究"
+    ],
+    "coffee-no-effect": [
+      "群聊研究"
+    ],
+    "soul-leaves-office": [
+      "群聊研究"
+    ],
+    "face-cover-embarrassed": [
+      "微信点击",
+      "QQ观察"
+    ],
+    "face-cover-laughing-tears": [
+      "微信点击",
+      "QQ观察"
+    ],
+    "lightstick-cheer-call": [
+      "QQ设计"
+    ],
+    "goodnight-lamp-off": [
+      "GIF目录"
+    ],
+    "good-morning-curtain": [
+      "GIF目录",
+      "微信田野"
+    ],
+    "farewell-wave-exit": [
+      "GIF目录",
+      "中文语料"
+    ],
+    "apology-small-bow": [
+      "GIF目录",
+      "中文语料"
+    ],
+    "palms-together-please": [
+      "GIF目录",
+      "中文语料"
+    ],
+    "head-shake-no": [
+      "GIF目录"
+    ],
+    "forehead-palm-sigh": [
+      "QQ设计",
+      "GIF目录"
+    ],
+    "surprise-gift-unbox": [
+      "GIF目录"
+    ],
+    "flower-offer": [
+      "微信群样本"
+    ],
+    "new-year-fist-palm": [
+      "微信群样本",
+      "微信田野"
+    ],
+    "birthday-candle-wish": [
+      "微信田野"
+    ]
+  }
+}

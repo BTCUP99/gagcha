@@ -1,0 +1,320 @@
+[
+  {
+    "id": "daily-16",
+    "name": "日常万能包",
+    "style": "flat-sticker",
+    "for": "一套覆盖日常回复的基础表情",
+    "actions": [
+      "small-paw-wave",
+      "received-check-stamp",
+      "double-thumbs-bounce",
+      "deep-bow-thanks",
+      "heart-hands-pulse",
+      "blanket-cocoon-hug",
+      "desk-shaking-laugh",
+      "jaw-drop-freeze",
+      "forehead-sweat-wipe",
+      "palms-together-please",
+      "steam-ear-puff",
+      "teardrop-puddle",
+      "melt-over-desk",
+      "confetti-hop",
+      "tiny-step-retreat",
+      "goodnight-lamp-off"
+    ]
+  },
+  {
+    "id": "worker-16",
+    "name": "打工人包",
+    "style": "doodle-meme",
+    "for": "工位吐槽和熟人同事群",
+    "actions": [
+      "monday-drag-out",
+      "pie-in-the-sky",
+      "blame-pot-throw",
+      "carry-the-pot",
+      "meeting-soul-doodle",
+      "change-request-again",
+      "overtime-window-moon",
+      "fake-busy-typing",
+      "received-with-dead-eyes",
+      "group-chat-at-all",
+      "leave-request-denied",
+      "resign-letter-swing",
+      "salary-evaporate",
+      "coffee-iv-drip",
+      "work-mask-swap",
+      "clock-out-sprint"
+    ]
+  },
+  {
+    "id": "meltdown-12",
+    "name": "发疯包",
+    "style": "doodle-meme",
+    "for": "熟人之间的精神状态展示",
+    "actions": [
+      "defense-broken-shatter",
+      "numb-pixel-fade",
+      "give-up-rot",
+      "explode-on-spot",
+      "spit-out-soul",
+      "crazy-scream-shake",
+      "smile-while-burning",
+      "hysterical-laugh-cry",
+      "wall-face-slide",
+      "twist-into-pretzel",
+      "shadow-crawl",
+      "split-paper-self"
+    ]
+  },
+  {
+    "id": "couple-12",
+    "name": "恋爱包",
+    "style": "plush",
+    "for": "情侣和暧昧对象",
+    "actions": [
+      "kiss-mwah-heart",
+      "miss-you-window",
+      "shy-fidget-kick",
+      "love-brain-bubbles",
+      "love-arrow-hit",
+      "hold-hands-sparks",
+      "partner-angry-hint",
+      "coax-with-bouquet",
+      "read-no-reply-wait",
+      "heart-hands-pulse",
+      "cheek-nuzzle",
+      "goodnight-lamp-off"
+    ]
+  },
+  {
+    "id": "cat-12",
+    "name": "猫猫包",
+    "style": "clay",
+    "for": "用自家猫或原创猫做主体",
+    "actions": [
+      "cat-hiss-puff",
+      "cat-pushes-cup",
+      "cat-slaps-human",
+      "cat-butt-wiggle",
+      "cat-box-liquid",
+      "cat-ignore-call",
+      "cat-3am-parkour",
+      "cat-belly-roll",
+      "pet-sleep-twitch",
+      "cat-spring-hop",
+      "paw-cover-grin",
+      "tail-heart-curl"
+    ]
+  },
+  {
+    "id": "dog-8",
+    "name": "狗狗包",
+    "style": "plush",
+    "for": "用自家狗或原创狗做主体",
+    "actions": [
+      "dog-home-destroy",
+      "dog-tail-helicopter",
+      "dog-vet-escape",
+      "dog-sad-eyes-begging",
+      "happy-tail-wag",
+      "drooping-ears",
+      "pet-sleep-twitch",
+      "paw-tap-applause"
+    ]
+  },
+  {
+    "id": "foodie-12",
+    "name": "干饭包",
+    "style": "food-mascot",
+    "for": "吃货朋友和美食群",
+    "actions": [
+      "dry-rice-charge",
+      "inhale-noodles",
+      "milk-tea-recharge",
+      "diet-chop-cheat",
+      "hotpot-boil-sweat",
+      "midnight-fridge-glow",
+      "takeout-door-dash",
+      "food-coma-roll",
+      "lunch-decision-wheel",
+      "drool-flood",
+      "hot-soup-tongue",
+      "bubble-water-burp"
+    ]
+  },
+  {
+    "id": "student-12",
+    "name": "学生党包",
+    "style": "crayon",
+    "for": "校园群和考试季",
+    "actions": [
+      "exam-blank-paper",
+      "fail-grade-stamp",
+      "thesis-all-nighter",
+      "homework-copy-speed",
+      "called-on-hide",
+      "sleep-in-class-bob",
+      "teacher-chalk-snipe",
+      "dorm-bed-cocoon",
+      "library-seat-rush",
+      "knowledge-leak-ear",
+      "graduate-cap-fall",
+      "grade-rank-spin"
+    ]
+  },
+  {
+    "id": "gamer-10",
+    "name": "开黑包",
+    "style": "pixel",
+    "for": "游戏好友和开黑群",
+    "actions": [
+      "open-squad-call",
+      "ranked-climb-fall",
+      "one-more-game",
+      "teammate-pit-keyboard",
+      "game-over-rage-quit",
+      "gacha-spin-pray",
+      "noob-carry-me",
+      "lag-freeze-teleport",
+      "victory-chicken-dance",
+      "boss-one-hit"
+    ]
+  },
+  {
+    "id": "elder-10",
+    "name": "亲友祝福包",
+    "style": "paper-cutout",
+    "for": "家族群和节日问候，全部工作群可用",
+    "actions": [
+      "good-morning-curtain",
+      "new-year-fist-palm",
+      "red-envelope-offer",
+      "flower-offer",
+      "womens-day-flower",
+      "mid-autumn-moon-bite",
+      "dragon-boat-zongzi",
+      "lantern-yuanxiao",
+      "winter-solstice-dumpling",
+      "birthday-candle-wish"
+    ]
+  },
+  {
+    "id": "reply-16",
+    "name": "回消息包",
+    "style": "flat-sticker",
+    "for": "一天里用得最多的聊天回复，工作群也能发",
+    "actions": [
+      "okay-bounce-nod",
+      "arranged-sleeve-roll",
+      "no-problem-ok-ring",
+      "indeed-slow-nod",
+      "on-my-way-blur",
+      "got-it-lightbulb",
+      "listening-ear-grow",
+      "later-talk-door",
+      "sure-salute",
+      "question-marks-rain",
+      "sigh-of-relief-deflate",
+      "thanks-big-bow-bump",
+      "hard-working-flame",
+      "done-mic-drop",
+      "saved-floppy-hug",
+      "wait-think-fist"
+    ]
+  },
+  {
+    "id": "comfort-10",
+    "name": "陪伴包",
+    "style": "plush",
+    "for": "朋友难过或累的时候",
+    "actions": [
+      "tissue-offer-hand",
+      "dont-be-scared-shield",
+      "catch-you-net",
+      "company-sit-silent",
+      "head-on-shoulder",
+      "warm-drink-hands",
+      "cheer-up-tiny-pompom",
+      "pat-pat-blanket",
+      "you-matter-star",
+      "blanket-cocoon-hug"
+    ]
+  },
+  {
+    "id": "photo-12",
+    "name": "写实整活包",
+    "style": "photo-real",
+    "for": "真人或宠物参考的自然实拍动作起点；可保留辨识特征，大胆变换演法与画风",
+    "actions": [
+      "rp-office-sinking",
+      "rp-falling-objects",
+      "rp-paper-storm",
+      "rp-long-stare-zoom",
+      "rp-duplicates-queue",
+      "rp-cloud-indoors",
+      "rp-phone-glow-age",
+      "rp-background-swap",
+      "rp-slowmo-walk-away",
+      "rp-tiny-self-on-shoulder",
+      "rp-confetti-alone",
+      "smile-while-burning"
+    ]
+  },
+  {
+    "id": "absurd-12",
+    "name": "抽象脑洞包",
+    "style": "doodle-meme",
+    "for": "熟人之间的抽象整活",
+    "actions": [
+      "potato-transform",
+      "head-balloon-float",
+      "mitosis-worker",
+      "soul-wifi-buffer",
+      "rotate-screen-gravity",
+      "chicken-run-head",
+      "zoom-out-small-universe",
+      "inflate-angry-fly",
+      "sandwich-self",
+      "button-reboot-back",
+      "copy-paste-face",
+      "long-sigh-ghost"
+    ]
+  },
+  {
+    "id": "mood-12",
+    "name": "小情绪包",
+    "style": "crayon",
+    "for": "日常的开心、傲娇、害怕和无语",
+    "actions": [
+      "yay-tiny-jump",
+      "hmph-turn-away",
+      "tongue-out-nyah",
+      "scared-tremble-peek",
+      "jealous-vinegar-bottle",
+      "cant-look-finger-gap",
+      "flustered-panic-spin",
+      "smug-chin-up",
+      "aww-melt-heart",
+      "speechless-dots",
+      "suspicious-squint",
+      "blackout-vision-fade"
+    ]
+  },
+  {
+    "id": "text-8",
+    "name": "文字动效包",
+    "style": "flat-sticker",
+    "for": "没有角色，只有字在动；文字在出片后叠加",
+    "actions": [
+      "text-crack-fall",
+      "text-jelly-wobble",
+      "text-typing-delete",
+      "text-stamp-bang",
+      "text-melt-drip",
+      "text-chase-pac",
+      "text-bubble-stuffed",
+      "text-ransom-cut"
+    ]
+  }
+]

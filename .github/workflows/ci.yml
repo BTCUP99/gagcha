@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Python 3.9 is the oldest we support; newer Ubuntu images no longer offer it.
+          - os: ubuntu-24.04
+            python-version: "3.9"
+          - os: ubuntu-latest
+            python-version: "3.13"
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install a Chinese font for the caption tests
+        # Skip recommended packages and the man-db rebuild, which can take many minutes.
+        run: |
+          sudo rm -f /var/lib/man-db/auto-update
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends fonts-noto-cjk
+      - name: Install dependencies
+        run: python -m pip install -r skills/gif-actions/requirements.txt
+      - name: Validate the catalog
+        run: python skills/gif-actions/scripts/action.py --check
+      - name: Check that CATALOG.md is up to date
+        run: |
+          python tools/build_catalog.py
+          git diff --exit-code CATALOG.md
+      - name: Run tests
+        run: python -m unittest discover -s tests -v

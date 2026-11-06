@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+jobs:
+  test:
+    uses: ./.github/workflows/ci.yml
+
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check that the tag matches the skill version
+        run: |
+          version="$(sed -n 's/^  version: //p' skills/gif-actions/SKILL.md)"
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match SKILL.md version $version"
+            exit 1
+          fi
+      - name: Package the skill
+        run: git archive --format=zip --prefix=gif-actions/ -o "gif-actions-$GITHUB_REF_NAME.zip" "$GITHUB_REF_NAME:skills/gif-actions"
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/release_notes.py "${GITHUB_REF_NAME#v}" > notes.md
+          gh release create "$GITHUB_REF_NAME" "gif-actions-$GITHUB_REF_NAME.zip" --title "$GITHUB_REF_NAME" --notes-file notes.md --verify-tag

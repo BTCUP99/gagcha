@@ -1,0 +1,36 @@
+name: 问题反馈
+description: 技能行为不对，或工具报错
+labels: [bug]
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: 你发给 Codex 的话
+      description: 原样贴出。请不要上传不想公开的照片。
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际发生了什么
+      description: 比如停在 PNG、人物被重绘、让你安装插件，或工具报错的完整内容。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期望的结果
+    validations:
+      required: true
+  - type: input
+    id: route
+    attributes:
+      label: 制作方式
+      description: 交付说明里写的是原生 GIF 还是帧表合成？
+  - type: input
+    id: versions
+    attributes:
+      label: 版本
+      description: 技能版本、Codex 版本、操作系统
+    validations:
+      required: true

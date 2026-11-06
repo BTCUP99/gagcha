@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+# 本地调试产出，可能含用户照片
+output/
+.agents/
+# 发布包放 GitHub Release，不进仓库
+releases/
+*.zip
