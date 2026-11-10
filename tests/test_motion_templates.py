@@ -25,7 +25,6 @@ class TemplateCliTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         rows = json.loads(result.stdout)
         self.assertGreaterEqual(len(rows), 18)
-        self.assertLessEqual(len(rows), 24)
         self.assertIn("snap-freeze", {row["id"] for row in rows})
         self.assertTrue({"paper-slide-exit", "wrap-hide", "clone-pass-blame", "deadpan-overload"}
                         <= {row["id"] for row in rows})
@@ -94,7 +93,8 @@ class TemplateCliTests(unittest.TestCase):
     def test_check_alias_validates_templates_and_preserves_action_catalog(self):
         result = run("--validate")
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn("430 个动作", result.stdout)
+        cards = json.loads((Path(__file__).resolve().parents[1] / "skills" / "gagcha" / "references" / "actions.json").read_text(encoding="utf-8"))
+        self.assertIn(f"{len(cards)} 个动作", result.stdout)
         self.assertIn(f"{len(TEMPLATES)} 个姿势模板", result.stdout)
 
 

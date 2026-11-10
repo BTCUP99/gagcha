@@ -918,5 +918,44 @@
       "loop": "hold",
       "note": "不变的是态度，升级的是负担；用清楚的尺寸跳变形成反差"
     }
+  },
+  {
+    "id": "zodiac-greeting",
+    "name": "生肖贺岁",
+    "intents": [
+      "拜年",
+      "生肖",
+      "本命年",
+      "新年好"
+    ],
+    "poses": [
+      "{subject}从画外蹦进画面，{feature}跟着甩起来，宣告{zodiac}年到了",
+      "{subject}站定，向镜头作揖，身后的{prop}亮起",
+      "{subject}原地转一圈，抖出一串金色小火花"
+    ],
+    "slots": {
+      "subject": "当年生肖的小动物",
+      "prop": "红灯笼",
+      "feature": "红围巾",
+      "zodiac": "羊"
+    },
+    "variants": {
+      "exaggerated": "落地时踉跄一下，帽子飞出去又落回头上",
+      "absurd": "生肖越变越大挤满画面，最后只剩一只眼睛在眨"
+    },
+    "adaptations": {
+      "human": "戴上生肖头套或角来演",
+      "pet": "给宠物戴上生肖的耳朵或角",
+      "object": "红包或灯笼长出生肖的耳朵"
+    },
+    "timing": {
+      "holds_ms": [
+        160,
+        450,
+        220
+      ],
+      "loop": "reset",
+      "note": "作揖停留最久；生肖每年替换，用 --slot zodiac=马 和 --character 写进主体"
+    }
   }
 ]

@@ -32,6 +32,11 @@ class SkillRuleTests(unittest.TestCase):
             self.assertNotIn(word, text, word)
         self.assertFalse((SKILL / "scripts" / "generate_gif.py").exists())
 
+    def test_holiday_guide_keeps_its_boundaries(self):
+        text = (SKILL / "references" / "festivals.md").read_text(encoding="utf-8")
+        for phrase in ("宗教", "禁放", "现成 IP"):
+            self.assertIn(phrase, text, phrase)
+
     def test_skill_version_matches_the_latest_changelog_release(self):
         import re
         root = SKILL.parents[1]
