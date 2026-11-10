@@ -24,6 +24,7 @@ FAMILIES = {
     "petlife": "宠物日常", "chatplay": "聊天互动与热梗", "body": "身体与养生",
     "daily": "生活意外", "reply": "回消息", "progress": "工作进度", "company": "陪伴安慰",
     "status": "日常状态", "mood": "小情绪", "textplay": "文字动效", "photoreal": "写实整活",
+    "christmas": "圣诞与平安夜", "newyear": "元旦与跨年", "spring": "春节",
 }
 SUBJECTS = {"human", "mascot", "pet", "object", "text"}
 LOOPS = {
@@ -75,6 +76,7 @@ FAMILY_HINTS = {
     "meltdown": ("发疯", "崩溃"), "work": ("打工", "上班", "职场"),
     "food": ("吃货", "美食"), "gaming": ("游戏",), "romance": ("恋爱", "情侣"),
     "petlife": ("猫猫", "狗狗", "宠物", "猫咪", "主子"), "school": ("学生", "校园"),
+    "christmas": ("圣诞", "平安夜"), "newyear": ("跨年", "元旦"), "spring": ("春节", "过年", "拜年", "新春"),
 }
 
 
@@ -110,6 +112,16 @@ def validate(rows):
                 raise ValueError(f"{key} 缺少 {field}")
         if len(row["beat"]) != 3 or not set(row["subjects"]) <= SUBJECTS:
             raise ValueError(f"检查 {key} 的三拍或主体")
+    # A pair is two stickers sent one after the other; both halves must point at each other.
+    by_id = {row["id"]: row for row in rows}
+    for row in rows:
+        pair = row.get("pair")
+        if pair is None:
+            continue
+        partner = by_id.get(pair.get("with")) if isinstance(pair, dict) else None
+        if (not partner or pair.get("step") not in (1, 2) or not isinstance(partner.get("pair"), dict)
+                or partner["pair"].get("with") != row["id"] or partner["pair"].get("step") + pair["step"] != 3):
+            raise ValueError(f"组合表情无效: {row['id']}")
 
 
 def validate_layers(rows, styles, trends, packs):
@@ -132,6 +144,11 @@ def validate_layers(rows, styles, trends, packs):
         missing = set(pack["actions"]) - ids
         if missing or pack["style"] not in style_ids or len(set(pack["actions"])) != len(pack["actions"]):
             raise ValueError(f"表情包 {pack['id']} 无效：{sorted(missing) or '风格错误或动作重复'}")
+        season = pack.get("season")
+        if season is not None and (not isinstance(season, dict) or not str(season.get("label", "")).strip()
+                                   or not all(re.fullmatch(r"(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])", str(season.get(k, "")))
+                                              for k in ("from", "to"))):
+            raise ValueError(f"表情包 {pack['id']} 的适用时段无效")
 
 
 def validate_templates(templates):
@@ -260,6 +277,9 @@ def brief(row, style=None, intensity=None, photo_ref=False, character=None):
     lines.append(f"适用关系：{AUDIENCES[row['audience']]}。")
     lines += [f"{label}：{beat}" for label, beat in zip(labels, row["beat"])]
     lines += [f"机位：{row['camera']}", f"循环指令：{LOOPS[row['loop']]}。", output_spec(row)]
+    if row.get("pair"):
+        partner = row["pair"]["with"]
+        lines.append(f"组合表情：这是两张连发的第 {row['pair']['step']} 张，另一张是 [{partner}]。两张都要做，按顺序交付，并告诉用户连着发。")
     if style:
         lines.append(style_line(style))
     if row["motion"] == "light":
@@ -270,8 +290,9 @@ def brief(row, style=None, intensity=None, photo_ref=False, character=None):
 
 
 def template_brief(template, style=None, character=None, prop=None, subject=None,
-                   intensity=None, photo_ref=False):
+                   intensity=None, photo_ref=False, extra_slots=None):
     slots = dict(template["slots"])
+    slots.update(extra_slots or {})
     if character:
         slots["subject"] = character
     if prop:
@@ -318,7 +339,9 @@ def pack_brief(pack, rows, style, character, photo_ref=False, style_explicit=Fal
              style_line(style, style_label),
              "整组围绕用途选择反应；构图、形变、节拍随每张的态度变化，每张突出一个意思。",
              "以下是该包的完整候选清单；默认交付数量由 SKILL.md 决定，用户明确要求整包或指定数量时按要求执行。",
-             "每款只生成一次，每张交付独立可播放的循环动图 GIF 文件，直接合成并交付。", ""]
+             "每款只生成一次，每张交付独立可播放的循环动图 GIF 文件，直接合成并交付。",
+             *([f"适用时段：{pack['season']['label']}，约 {pack['season']['from']} 至 {pack['season']['to']}；过了这个时段不主动推荐。"]
+               if pack.get("season") else []), ""]
     for n, row in enumerate(cards, 1):
         lines.append(f"{n:02d}. {row['name']} [{row['id']}]｜笑点：{GAGS[row['gag']][0]}｜{INTENSITIES[row['intensity']][0]}"
                      f"｜{AUDIENCES[row['audience']]}")
@@ -345,6 +368,8 @@ def main():
     parser.add_argument("--pack", help="输出成套表情包的导演说明")
     parser.add_argument("--character", help="--brief、--pack 或 --template 使用的主体及文字特征；不默认绑定画风")
     parser.add_argument("--prop", help="--template 中替换的道具")
+    parser.add_argument("--slot", action="append", default=[], metavar="名=值",
+                        help="替换模板里的任意槽位，可重复，例如 --slot zodiac=马")
     parser.add_argument("--template", help="展开指定的可复用姿势模板")
     parser.add_argument("--list-templates", action="store_true", help="列出可复用姿势模板")
     parser.add_argument("--list-styles", action="store_true", help="列出风格库")
@@ -388,8 +413,14 @@ def main():
         if args.json:
             print(json.dumps(template, ensure_ascii=False, indent=2))
         else:
+            extra = {}
+            for item in args.slot:
+                name, sep, value = item.partition("=")
+                if not sep or name not in template["slots"] or not value.strip():
+                    parser.error(f"--slot 须为模板已有的槽位，例如 zodiac=马；本模板可用：{', '.join(template['slots'])}")
+                extra[name] = value.strip()
             print(template_brief(template, styles_by_id.get(args.style), args.character, args.prop,
-                                 args.subject, args.intensity, args.photo_ref))
+                                 args.subject, args.intensity, args.photo_ref, extra))
         return 0
     if args.list_styles:
         for group, title in STYLE_GROUPS.items():
@@ -399,7 +430,8 @@ def main():
         return 0
     if args.list_packs:
         for pack in packs:
-            print(f"{pack['id']:12} {pack['name']} · {len(pack['actions'])} 张 · {pack['for']}")
+            season = f" · 适用：{pack['season']['label']}" if pack.get("season") else ""
+            print(f"{pack['id']:18} {pack['name']} · {len(pack['actions'])} 张 · {pack['for']}{season}")
         return 0
     if args.pack:
         pack = next((p for p in packs if p["id"] == args.pack), None)

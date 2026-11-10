@@ -193,6 +193,40 @@ class BriefTests(unittest.TestCase):
         self.assertIn("黏土定格",run("--id","rp-office-sinking","--brief","--photo-ref","--style","clay").stdout)
         self.assertIn("不锁画风",run("--id","smile-while-burning","--brief","--photo-ref").stdout)
 
+    def test_pairs_point_at_each_other_and_say_so_in_the_brief(self):
+        cards={c["id"]:c for c in json.loads((SCRIPT.parents[1]/"references"/"actions.json").read_text(encoding="utf-8"))}
+        pairs=[c for c in cards.values() if c.get("pair")]
+        self.assertGreaterEqual(len(pairs),6)
+        for card in pairs:
+            partner=cards[card["pair"]["with"]]
+            self.assertEqual(partner["pair"]["with"],card["id"])
+            self.assertEqual({card["pair"]["step"],partner["pair"]["step"]},{1,2})
+        text=run("--id","red-packet-tease-give","--brief").stdout
+        self.assertIn("第 1 张",text)
+        self.assertIn("red-packet-tease-retract",text)
+
+    def test_holiday_packs_have_seasons_and_the_elder_pack_is_safe(self):
+        references=SCRIPT.parents[1]/"references"
+        cards={c["id"]:c for c in json.loads((references/"actions.json").read_text(encoding="utf-8"))}
+        packs={p["id"]:p for p in json.loads((references/"packs.json").read_text(encoding="utf-8"))}
+        for pid in ("christmas-12","newyear-10","spring-elder-12","spring-friends-12"):
+            self.assertIn("season",packs[pid])
+            self.assertIn("适用时段",run("--pack",pid).stdout)
+        self.assertEqual({cards[a]["audience"] for a in packs["spring-elder-12"]["actions"]},{"safe"})
+        self.assertIn("适用：",run("--list-packs").stdout)
+
+    def test_zodiac_template_takes_this_years_animal(self):
+        text=run("--template","zodiac-greeting","--slot","zodiac=马","--character","戴红围巾的小马").stdout
+        self.assertIn("戴红围巾的小马",text)
+        self.assertIn("zodiac=马",text)
+        self.assertNotEqual(run("--template","zodiac-greeting","--slot","nope=1").returncode,0)
+
+    def test_holiday_phrases_route_to_holiday_cards(self):
+        for phrase,expected in {"平安果":"apple-offer","福到了":"fu-upside-down","讨红包":"bowl-for-red-packet",
+                                "跨年":"countdown-asleep","立flag":"flag-planted","年夜饭":"dinner-turntable",
+                                "亲戚盘问":"relative-triple-question","守岁":"stay-up-toothpick"}.items():
+            self.assertEqual(json.loads(run(phrase,"--json","--limit","1").stdout)[0]["id"],expected,phrase)
+
     def test_unknown_style_is_rejected(self):
         self.assertNotEqual(run("吃瓜","--brief","--style","no-such-style").returncode,0)
 

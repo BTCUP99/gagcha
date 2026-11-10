@@ -316,5 +316,103 @@
       "text-bubble-stuffed",
       "text-ransom-cut"
     ]
+  },
+  {
+    "id": "christmas-12",
+    "name": "圣诞平安夜包",
+    "style": "toy-3d",
+    "for": "圣诞和平安夜的祝福、吐槽和一个人过节",
+    "season": {
+      "label": "圣诞前后",
+      "from": "12-01",
+      "to": "12-26"
+    },
+    "actions": [
+      "apple-offer",
+      "apple-unboxing",
+      "peace-eaten-first",
+      "self-xmas-tree",
+      "i-am-the-reindeer",
+      "stocking-todo",
+      "lonely-eve-toast",
+      "snowed-into-snowman",
+      "hat-stack-wishes",
+      "gift-box-me",
+      "gift-returned",
+      "cat-topples-tree"
+    ]
+  },
+  {
+    "id": "newyear-10",
+    "name": "跨年包",
+    "style": "flat-sticker",
+    "for": "元旦跨年的倒数、新年 flag 和年终总结",
+    "season": {
+      "label": "跨年前后",
+      "from": "12-20",
+      "to": "01-05"
+    },
+    "actions": [
+      "countdown-asleep",
+      "flag-planted",
+      "flag-fallen",
+      "tear-old-calendar",
+      "new-year-new-me",
+      "year-end-scroll",
+      "mirror-same-me",
+      "bell-shockwave",
+      "midnight-blessing-rush",
+      "first-workday-banner"
+    ]
+  },
+  {
+    "id": "spring-elder-12",
+    "name": "春节长辈包",
+    "style": "elder-greeting",
+    "for": "发给长辈和家族群的拜年表情，全部工作群可用",
+    "season": {
+      "label": "春节前后（日期每年不同）",
+      "from": "01-10",
+      "to": "03-05"
+    },
+    "actions": [
+      "new-year-fist-palm",
+      "fu-upside-down",
+      "blessing-machine-gun",
+      "zodiac-hop-in",
+      "elder-gold-greeting",
+      "reply-full-mouth",
+      "red-packet-gold-light",
+      "red-packet-refuse",
+      "coin-dumpling-bite",
+      "lion-head-stuck",
+      "video-heart-parents",
+      "couplet-with-name"
+    ]
+  },
+  {
+    "id": "spring-friends-12",
+    "name": "春节好友包",
+    "style": "doodle-meme",
+    "for": "和朋友互相吐槽过年：讨红包、被盘问、胖三斤、被拖回工位",
+    "season": {
+      "label": "春节前后（日期每年不同）",
+      "from": "01-10",
+      "to": "03-05"
+    },
+    "actions": [
+      "bowl-for-red-packet",
+      "red-packet-tease-give",
+      "red-packet-tease-retract",
+      "red-packet-xray",
+      "hide-in-spring-roll",
+      "relative-triple-question",
+      "dinner-turntable",
+      "stay-up-toothpick",
+      "group-blessing-slip",
+      "video-call-freeze",
+      "belt-notch-pop",
+      "dragged-back-to-work"
+    ]
   }
 ]

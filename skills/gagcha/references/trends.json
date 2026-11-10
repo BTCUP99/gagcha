@@ -1,33 +1,270 @@
 {
   "_about": "可更新的热梗层。added 是收录日期，meaning 是项目写的释义；收录不代表当前仍然流行。过气的梗直接删除，动作卡不受影响。",
   "terms": [
-    {"term": "破防了", "meaning": "被一句话戳中，绷不住", "actions": ["defense-broken-shatter", "paper-flat-wind"], "added": "2026-11-06"},
-    {"term": "我麻了", "meaning": "无语到没有感觉", "actions": ["numb-pixel-fade", "dead-fish-eyes"], "added": "2026-11-06"},
-    {"term": "摆烂", "meaning": "不再挣扎，随它去", "actions": ["give-up-rot", "lie-flat-plank"], "added": "2026-11-06"},
-    {"term": "躺平", "meaning": "主动退出竞争", "actions": ["lie-flat-plank", "give-up-rot"], "added": "2026-11-06"},
-    {"term": "精神状态", "meaning": "用发疯式表达调侃压力", "actions": ["hysterical-laugh-cry", "crazy-scream-shake"], "added": "2026-11-06"},
-    {"term": "发疯文学", "meaning": "夸张失控的文字和表情", "actions": ["crazy-scream-shake", "shadow-crawl"], "added": "2026-11-06"},
-    {"term": "寄了", "meaning": "事情完蛋了", "actions": ["zero-hp-tombstone", "bbq-burnt-now"], "added": "2026-11-06"},
-    {"term": "芭比Q了", "meaning": "完蛋了", "actions": ["bbq-burnt-now", "zero-hp-tombstone"], "added": "2026-11-06"},
-    {"term": "栓Q", "meaning": "谢谢你，带无语和崩溃", "actions": ["thanks-q-whisper", "courteous-slow-clap"], "added": "2026-11-06"},
-    {"term": "我真的会谢", "meaning": "反讽式道谢", "actions": ["thanks-q-whisper", "courteous-slow-clap"], "added": "2026-11-06"},
-    {"term": "蚌埠住了", "meaning": "“绷不住了”的谐音", "actions": ["bengbu-held-breath", "desk-shaking-laugh"], "added": "2026-11-06"},
-    {"term": "绝绝子", "meaning": "夸张地表示太绝了", "actions": ["yyds-crown-text", "star-eyes-rise"], "added": "2026-11-06"},
-    {"term": "yyds", "meaning": "永远的神", "actions": ["yyds-crown-text", "spotlight-crown"], "added": "2026-11-06"},
-    {"term": "典", "meaning": "太典型了，常带嘲讽", "actions": ["classic-stamp-dian", "side-eye-tea"], "added": "2026-11-06"},
-    {"term": "急了", "meaning": "调侃对方破防着急", "actions": ["overheat-steam-kettle", "stomp-small-circle"], "added": "2026-11-06"},
-    {"term": "狗头保命", "meaning": "说完玩笑话后撇清", "actions": ["dog-head-shield"], "added": "2026-11-06"},
-    {"term": "鸽了", "meaning": "爽约、拖更", "actions": ["pigeon-stood-up"], "added": "2026-11-06"},
-    {"term": "功德+1", "meaning": "敲电子木鱼的赛博修行", "actions": ["wooden-fish-merit"], "added": "2026-11-06"},
-    {"term": "V我50", "meaning": "玩笑式讨要转账", "actions": ["treat-me-bow"], "added": "2026-11-06"},
-    {"term": "恋爱脑", "meaning": "恋爱时失去理智", "actions": ["love-brain-bubbles", "love-arrow-hit"], "added": "2026-11-06"},
-    {"term": "吃土", "meaning": "钱花光了", "actions": ["broke-pocket-moth", "salary-evaporate"], "added": "2026-11-06"},
-    {"term": "牛马", "meaning": "打工人自嘲", "actions": ["newbie-holds-everything", "overtime-window-moon", "melt-over-desk"], "added": "2026-11-06"},
-    {"term": "社畜", "meaning": "打工人自嘲", "actions": ["work-mask-swap", "received-with-dead-eyes"], "added": "2026-11-06"},
-    {"term": "CPU烧了", "meaning": "想不明白，脑子过载", "actions": ["brain-loading-fail", "brain-takes-flight"], "added": "2026-11-06"},
-    {"term": "哈基米", "meaning": "网友对猫的昵称", "actions": ["cat-hiss-puff", "cat-butt-wiggle", "cat-belly-roll"], "added": "2026-11-06"},
-    {"term": "嗑到了", "meaning": "被一对角色甜到", "actions": ["seed-cracking-pile", "love-brain-bubbles"], "added": "2026-11-06"},
-    {"term": "赛博修行", "meaning": "用线上仪式调侃焦虑", "actions": ["wooden-fish-merit"], "added": "2026-11-06"},
-    {"term": "水逆", "meaning": "近期运气差", "actions": ["rainy-no-umbrella"], "added": "2026-11-06"}
+    {
+      "term": "破防了",
+      "meaning": "被一句话戳中，绷不住",
+      "actions": [
+        "defense-broken-shatter",
+        "paper-flat-wind"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "我麻了",
+      "meaning": "无语到没有感觉",
+      "actions": [
+        "numb-pixel-fade",
+        "dead-fish-eyes"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "摆烂",
+      "meaning": "不再挣扎，随它去",
+      "actions": [
+        "give-up-rot",
+        "lie-flat-plank"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "躺平",
+      "meaning": "主动退出竞争",
+      "actions": [
+        "lie-flat-plank",
+        "give-up-rot"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "精神状态",
+      "meaning": "用发疯式表达调侃压力",
+      "actions": [
+        "hysterical-laugh-cry",
+        "crazy-scream-shake"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "发疯文学",
+      "meaning": "夸张失控的文字和表情",
+      "actions": [
+        "crazy-scream-shake",
+        "shadow-crawl"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "寄了",
+      "meaning": "事情完蛋了",
+      "actions": [
+        "zero-hp-tombstone",
+        "bbq-burnt-now"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "芭比Q了",
+      "meaning": "完蛋了",
+      "actions": [
+        "bbq-burnt-now",
+        "zero-hp-tombstone"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "栓Q",
+      "meaning": "谢谢你，带无语和崩溃",
+      "actions": [
+        "thanks-q-whisper",
+        "courteous-slow-clap"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "我真的会谢",
+      "meaning": "反讽式道谢",
+      "actions": [
+        "thanks-q-whisper",
+        "courteous-slow-clap"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "蚌埠住了",
+      "meaning": "“绷不住了”的谐音",
+      "actions": [
+        "bengbu-held-breath",
+        "desk-shaking-laugh"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "绝绝子",
+      "meaning": "夸张地表示太绝了",
+      "actions": [
+        "yyds-crown-text",
+        "star-eyes-rise"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "yyds",
+      "meaning": "永远的神",
+      "actions": [
+        "yyds-crown-text",
+        "spotlight-crown"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "典",
+      "meaning": "太典型了，常带嘲讽",
+      "actions": [
+        "classic-stamp-dian",
+        "side-eye-tea"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "急了",
+      "meaning": "调侃对方破防着急",
+      "actions": [
+        "overheat-steam-kettle",
+        "stomp-small-circle"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "狗头保命",
+      "meaning": "说完玩笑话后撇清",
+      "actions": [
+        "dog-head-shield"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "鸽了",
+      "meaning": "爽约、拖更",
+      "actions": [
+        "pigeon-stood-up"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "功德+1",
+      "meaning": "敲电子木鱼的赛博修行",
+      "actions": [
+        "wooden-fish-merit"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "V我50",
+      "meaning": "玩笑式讨要转账",
+      "actions": [
+        "treat-me-bow"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "恋爱脑",
+      "meaning": "恋爱时失去理智",
+      "actions": [
+        "love-brain-bubbles",
+        "love-arrow-hit"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "吃土",
+      "meaning": "钱花光了",
+      "actions": [
+        "broke-pocket-moth",
+        "salary-evaporate"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "牛马",
+      "meaning": "打工人自嘲",
+      "actions": [
+        "newbie-holds-everything",
+        "overtime-window-moon",
+        "melt-over-desk"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "社畜",
+      "meaning": "打工人自嘲",
+      "actions": [
+        "work-mask-swap",
+        "received-with-dead-eyes"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "CPU烧了",
+      "meaning": "想不明白，脑子过载",
+      "actions": [
+        "brain-loading-fail",
+        "brain-takes-flight"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "哈基米",
+      "meaning": "网友对猫的昵称",
+      "actions": [
+        "cat-hiss-puff",
+        "cat-butt-wiggle",
+        "cat-belly-roll"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "嗑到了",
+      "meaning": "被一对角色甜到",
+      "actions": [
+        "seed-cracking-pile",
+        "love-brain-bubbles"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "赛博修行",
+      "meaning": "用线上仪式调侃焦虑",
+      "actions": [
+        "wooden-fish-merit"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "水逆",
+      "meaning": "近期运气差",
+      "actions": [
+        "rainy-no-umbrella"
+      ],
+      "added": "2026-11-06"
+    },
+    {
+      "term": "立flag",
+      "meaning": "立下目标，常常坚持不了",
+      "actions": [
+        "flag-planted",
+        "flag-fallen"
+      ],
+      "added": "2026-11-10"
+    },
+    {
+      "term": "口嫌体正直",
+      "meaning": "嘴上拒绝，行动很诚实",
+      "actions": [
+        "red-packet-refuse"
+      ],
+      "added": "2026-11-10"
+    }
   ]
 }

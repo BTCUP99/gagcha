@@ -43,11 +43,11 @@ Nine takes from one AI-generated portrait (not a real person), made by Codex wit
 
 | Item | Count | Notes |
 | --- | ---: | --- |
-| [Action cards](CATALOG.md) | 430 | Three-beat storyboard, loop type, gag mechanic, intensity, audience, motion type, and an optional natural-action marker |
-| Scene categories | 38 | Everyday replies, work progress, comfort, moods, meltdowns, food, festivals, gaming, pets, kinetic text, photo-real gags, and more |
+| [Action cards](CATALOG.md) | 487 | Three-beat storyboard, loop type, gag mechanic, intensity, audience, motion type, and an optional natural-action marker |
+| Scene categories | 41 | Everyday replies, work progress, comfort, moods, meltdowns, food, festivals, gaming, pets, kinetic text, photo-real gags, and more |
 | [Visual styles](CATALOG.md#风格库) | See catalog | Doodle, pixel, clay, photo cutouts, ugly-cute, mixed media, and more |
 | [Motion templates](CATALOG.md#动作模板) | See catalog | Reusable pose and timing structures with replaceable characters, props, attitudes, and styles |
-| Sticker packs | 16 | Candidate action collections; the requested quantity controls delivery |
+| Sticker packs | 20 | Candidate action collections, including Christmas, New Year, and Spring Festival packs |
 | Trend layer | 28 | Slang mapped to actions, dated so it can be updated |
 | Tools | 6 | Action search and briefs, sheet assembly and light motion, GIF checks, Chinese captions, sheet splitting, encoding |
 

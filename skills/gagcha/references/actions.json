@@ -12920,5 +12920,1682 @@
     "audience": "casual",
     "motion": "action",
     "photo": false
+  },
+  {
+    "id": "apple-offer",
+    "name": "递平安果",
+    "family": "christmas",
+    "aliases": [
+      "平安果",
+      "平安夜快乐",
+      "送苹果",
+      "平平安安"
+    ],
+    "beat": [
+      "主体双手捧着一个红苹果，从画面下方慢慢举起",
+      "苹果递到镜头前，苹果上浮出一张小笑脸，对镜头眨一下眼",
+      "苹果收回胸前，主体也眨一下眼"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet",
+      "object"
+    ],
+    "mood": "温暖",
+    "camera": "近景，苹果占前景。",
+    "gag": "sincere",
+    "intensity": "restrained",
+    "audience": "safe",
+    "motion": "light",
+    "preset": "pop",
+    "photo": true
+  },
+  {
+    "id": "apple-unboxing",
+    "name": "平安果开箱",
+    "family": "christmas",
+    "aliases": [
+      "平安果开箱",
+      "包装比苹果大",
+      "收到平安果",
+      "送的苹果"
+    ],
+    "beat": [
+      "主体抱着一个比自己还大的精美礼盒，满脸期待",
+      "拆开一层又一层彩纸和丝带，盒子越拆越小，最后露出一颗小苹果",
+      "主体举起苹果对光看了看，默默咬一口"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "期待落空",
+    "camera": "固定中景，纸屑堆满地面。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "peace-eaten-first",
+    "name": "平安我先吃了",
+    "family": "christmas",
+    "aliases": [
+      "平安我吃了",
+      "我先吃为敬",
+      "平安收下了",
+      "吃平安果"
+    ],
+    "beat": [
+      "主体接过一个包装好的苹果，郑重鞠躬",
+      "当场撕开包装咬下一大口，腮帮鼓起，对镜头比耶",
+      "嚼着嚼着又鞠一躬"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "欠",
+    "camera": "近景。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "self-xmas-tree",
+    "name": "把自己挂成圣诞树",
+    "family": "christmas",
+    "aliases": [
+      "圣诞树",
+      "我就是圣诞树",
+      "挂满彩灯",
+      "装饰自己"
+    ],
+    "beat": [
+      "主体身上缠满没亮的彩灯，头顶插一颗星，表情期待",
+      "插头一插，全身彩灯依次亮起闪烁，头顶的星星歪到一边",
+      "灯一下全灭，主体还保持姿势"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet",
+      "object"
+    ],
+    "mood": "自娱",
+    "camera": "全身固定，暗背景让灯更显眼。",
+    "gag": "literal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "i-am-the-reindeer",
+    "name": "我才是那只麋鹿",
+    "family": "christmas",
+    "aliases": [
+      "圣诞打工",
+      "打工人圣诞",
+      "我是麋鹿",
+      "拉雪橇"
+    ],
+    "beat": [
+      "雪地里，圣诞老人舒服地坐在雪橇上喝热可可",
+      "拉雪橇的是戴着鹿角发箍、满头大汗的主体，雪橇上的礼物越堆越高",
+      "主体停下喘气，鹿角歪了，又被一声铃铛催着继续拉"
+    ],
+    "loop": "cycle",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "打工自嘲",
+    "camera": "侧面横向跟随。",
+    "gag": "contrast",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "stocking-todo",
+    "name": "圣诞袜里全是活",
+    "family": "christmas",
+    "aliases": [
+      "圣诞袜",
+      "圣诞礼物呢",
+      "礼物呢",
+      "许愿袜"
+    ],
+    "beat": [
+      "主体把一只大袜子挂到床头，闭眼许愿",
+      "第二天伸手一掏，掏出一沓写着待办的文件，越掏越多",
+      "主体把文件塞回袜子，假装没看见，重新闭眼"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "期待落空",
+    "camera": "固定中景。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "lonely-eve-toast",
+    "name": "一个人的平安夜",
+    "family": "christmas",
+    "aliases": [
+      "一个人过节",
+      "一个人的平安夜",
+      "单身平安夜",
+      "孤单圣诞"
+    ],
+    "beat": [
+      "主体坐在桌前，对面是一棵手掌大的迷你圣诞树",
+      "举杯和小树碰杯，小树上唯一的一颗灯闪了一下作为回应",
+      "主体点点头，自己喝了一口"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "孤独喜剧",
+    "camera": "固定中景，暖光。",
+    "gag": "deadpan",
+    "intensity": "restrained",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "snowed-into-snowman",
+    "name": "被雪堆成雪人",
+    "family": "christmas",
+    "aliases": [
+      "雪人",
+      "冻住了",
+      "圣诞下雪",
+      "下雪啦"
+    ],
+    "beat": [
+      "主体站在雪里伸手接雪花，开心抬头",
+      "雪越下越大，把主体一层层堆成雪人，鼻子变成胡萝卜，只剩眼睛在眨",
+      "一阵风吹过，雪人掉了一块，露出主体冻红的脸"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet",
+      "object"
+    ],
+    "mood": "冷幽默",
+    "camera": "固定全身。",
+    "gag": "scale",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "hat-stack-wishes",
+    "name": "圣诞帽越叠越高",
+    "family": "christmas",
+    "aliases": [
+      "merry christmas",
+      "圣诞帽",
+      "收到圣诞祝福",
+      "圣诞祝福"
+    ],
+    "beat": [
+      "主体戴着一顶圣诞帽，手机叮一声",
+      "每响一声就飞来一顶帽子叠上去，帽塔越来越高，左右摇晃",
+      "塔顶的小球掉下来砸到鼻子，主体打了个喷嚏，整塔倒下"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet",
+      "object"
+    ],
+    "mood": "热闹",
+    "camera": "竖向构图，上方留白。",
+    "gag": "escalation",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "gift-box-me",
+    "name": "礼物就是我",
+    "family": "christmas",
+    "aliases": [
+      "礼物就是我",
+      "我是礼物",
+      "收下我",
+      "把我送给你"
+    ],
+    "beat": [
+      "一个系着丝带的大礼盒放在画面中央，盒子轻轻抖了一下",
+      "盒盖弹开，主体从里面探出来，头顶顶着蝴蝶结，张开双手",
+      "主体缩回去，盒盖合上，丝带自己系好"
+    ],
+    "loop": "occlusion",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "撒娇",
+    "camera": "固定中景。",
+    "gag": "sincere",
+    "intensity": "exaggerated",
+    "audience": "close",
+    "motion": "action",
+    "photo": true,
+    "pair": {
+      "with": "gift-returned",
+      "step": 1
+    }
+  },
+  {
+    "id": "gift-returned",
+    "name": "礼物被退货",
+    "family": "christmas",
+    "aliases": [
+      "退货",
+      "不要了",
+      "七天无理由",
+      "退回去"
+    ],
+    "beat": [
+      "同一个礼盒放在门口，盒子上贴着一张快递单",
+      "一只手在快递单上盖下已退货红章，礼盒里的主体探头，一脸震惊",
+      "快递车把盒子拉走，主体在盒子里挥手"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet",
+      "object"
+    ],
+    "mood": "被拒也好笑",
+    "camera": "固定中景。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "close",
+    "motion": "action",
+    "photo": true,
+    "pair": {
+      "with": "gift-box-me",
+      "step": 2
+    }
+  },
+  {
+    "id": "carol-off-key",
+    "name": "圣诞合唱跑调",
+    "family": "christmas",
+    "aliases": [
+      "唱圣诞歌",
+      "铃儿响叮当",
+      "跑调",
+      "合唱"
+    ],
+    "beat": [
+      "三个主体排成一排张嘴合唱，音符整齐飘出",
+      "中间那个突然飙出高音，音符变成歪七扭八的闪电，两边的同时转头看它",
+      "中间那个闭上嘴，假装是旁边唱的"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "欢乐翻车",
+    "camera": "固定中景，三人正面。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "cat-topples-tree",
+    "name": "猫扑倒圣诞树",
+    "family": "christmas",
+    "aliases": [
+      "猫爬圣诞树",
+      "圣诞树倒了",
+      "猫猫圣诞",
+      "主子过圣诞"
+    ],
+    "beat": [
+      "猫盯着一棵挂满小球的圣诞树，屁股左右扭",
+      "一跃扑上树，树带着猫慢慢倒下，小球滚了一地",
+      "猫从树枝下钻出来，嘴里叼着一颗小球，若无其事"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "pet",
+      "mascot"
+    ],
+    "mood": "捣蛋",
+    "camera": "低机位全景。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "text-snow-letters",
+    "name": "祝福字被雪压弯",
+    "family": "christmas",
+    "aliases": [
+      "圣诞快乐字",
+      "下雪文字",
+      "雪花文字"
+    ],
+    "beat": [
+      "画面中央几个字安静立着，开始飘雪",
+      "雪在字上越积越厚，字被压弯，最后一个字被压得蹲下",
+      "字一抖，雪全被抖飞"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "text"
+    ],
+    "mood": "俏皮",
+    "camera": "深蓝纯色背景，文字由后期叠字。",
+    "gag": "literal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "rp-office-snow",
+    "name": "工位下大雪",
+    "family": "christmas",
+    "aliases": [
+      "办公室下雪",
+      "圣诞加班",
+      "公司过圣诞",
+      "圣诞还在上班"
+    ],
+    "beat": [
+      "主体在工位认真打字，头顶突然飘下几片雪花",
+      "雪越下越大，键盘、桌面、肩头都积了雪，主体始终在打字，呼出白气",
+      "一个雪球从画外飞来砸中主体，主体淡定拍掉继续打字"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "pet"
+    ],
+    "mood": "冷面荒诞",
+    "camera": "固定机位，写实；人始终真实不变形，只有环境变化。",
+    "gag": "deadpan",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "countdown-asleep",
+    "name": "跨年倒数睡着了",
+    "family": "newyear",
+    "aliases": [
+      "跨年",
+      "新年倒计时",
+      "跨年夜"
+    ],
+    "beat": [
+      "主体举着小喇叭，对着画外的倒计时大声数三、二",
+      "数到一时头一歪睡着了，身后烟花轰然炸开，照亮睡脸",
+      "烟花散去，主体在梦里嘟囔新年快乐"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "反差",
+    "camera": "固定中景，夜空背景。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "flag-planted",
+    "name": "立新年 flag",
+    "family": "newyear",
+    "aliases": [
+      "新年flag",
+      "立flag",
+      "新年计划",
+      "新年目标",
+      "今年一定"
+    ],
+    "beat": [
+      "主体扛着一面写着新年目标的大旗走到画面中央",
+      "郑重把旗杆插进地里，叉腰挺胸，旗子迎风招展",
+      "主体对镜头竖起大拇指"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "信心满满",
+    "camera": "低机位仰拍。",
+    "gag": "sincere",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true,
+    "pair": {
+      "with": "flag-fallen",
+      "step": 1
+    }
+  },
+  {
+    "id": "flag-fallen",
+    "name": "flag 倒了",
+    "family": "newyear",
+    "aliases": [
+      "flag倒了",
+      "计划泡汤",
+      "坚持不了",
+      "第二天就放弃"
+    ],
+    "beat": [
+      "同一面旗插在地上，旁边的日历只翻过了一页",
+      "一阵小风吹来，旗子慢慢倒下，主体在旁边躺平，盖着旗子睡觉",
+      "日历又翻一页，主体翻个身"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "自嘲",
+    "camera": "同一机位。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true,
+    "pair": {
+      "with": "flag-planted",
+      "step": 2
+    }
+  },
+  {
+    "id": "tear-old-calendar",
+    "name": "撕掉旧日历",
+    "family": "newyear",
+    "aliases": [
+      "撕日历",
+      "告别旧年",
+      "翻篇",
+      "新的一年",
+      "再见旧年"
+    ],
+    "beat": [
+      "主体捏住一本日历的最后一页，深吸一口气",
+      "用力撕下，日历后面露出一个焕然一新、闪闪发光的主体",
+      "新主体对旧主体挥手，旧主体被风吹走"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet",
+      "object"
+    ],
+    "mood": "告别",
+    "camera": "固定近景。",
+    "gag": "literal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "new-year-new-me",
+    "name": "新年新气象",
+    "family": "newyear",
+    "aliases": [
+      "新年新气象",
+      "新年新我",
+      "新的我",
+      "焕然一新"
+    ],
+    "beat": [
+      "主体站在镜子前，身后一阵彩色光效旋转",
+      "光效散开，主体换上新形象，和之前一模一样，只多了一顶小帽子",
+      "主体对着镜子满意点头"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "自欺欺人",
+    "camera": "镜子同框。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "year-end-scroll",
+    "name": "年终总结",
+    "family": "newyear",
+    "aliases": [
+      "年终总结",
+      "年度总结",
+      "今年做了什么",
+      "回顾一年"
+    ],
+    "beat": [
+      "主体郑重捧出一卷长长的卷轴，清一清嗓子",
+      "卷轴一路滚到画面外，展开后只写着两个大字活着",
+      "主体点点头，把卷轴卷回去"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "苦中作乐",
+    "camera": "固定中景，卷轴文字由后期叠字。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "mirror-same-me",
+    "name": "去年的我和今年的我",
+    "family": "newyear",
+    "aliases": [
+      "去年的我",
+      "今年的我",
+      "一年过去了",
+      "我没变",
+      "老样子"
+    ],
+    "beat": [
+      "画面左右各一个主体，左边举着去年的牌子，右边举着今年的牌子",
+      "两人对视一眼，同时深深叹气，动作完全一致",
+      "两人同时放下牌子"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "冷面",
+    "camera": "左右对称构图，牌子文字由后期叠字。",
+    "gag": "deadpan",
+    "intensity": "restrained",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "first-workday-banner",
+    "name": "新年第一天上班",
+    "family": "newyear",
+    "aliases": [
+      "新年上班",
+      "元旦后上班",
+      "新年第一天",
+      "假期结束上班"
+    ],
+    "beat": [
+      "主体坐在工位前，头顶挂着新年快乐的横幅，笑容僵硬",
+      "横幅一个字一个字掉下来，主体的笑容也一点点垮掉",
+      "最后一个字掉落时主体扶正嘴角，继续笑"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot"
+    ],
+    "mood": "硬撑",
+    "camera": "固定中景。",
+    "gag": "contrast",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "bell-shockwave",
+    "name": "跨年钟声震飞",
+    "family": "newyear",
+    "aliases": [
+      "新年钟声",
+      "零点",
+      "新年到了",
+      "零点了"
+    ],
+    "beat": [
+      "主体站在大钟下，抬头等待",
+      "钟声一响，冲击波把主体的头发和衣服全吹向后方，主体抖成残影",
+      "声波散去，主体头发竖着，愣愣地说新年快乐"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet",
+      "object"
+    ],
+    "mood": "夸张",
+    "camera": "低机位仰拍大钟。",
+    "gag": "scale",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "text-year-kick",
+    "name": "年份数字换岗",
+    "family": "newyear",
+    "aliases": [
+      "跨年快乐",
+      "新的一年到了",
+      "年份更替",
+      "新年数字"
+    ],
+    "beat": [
+      "画面中央立着去年的年份，最后一位数字在打哈欠",
+      "新的数字从画外跑进来，一脚把旧数字踢出画面，自己站到最后一位",
+      "新数字整理领结，向镜头鞠躬"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "text"
+    ],
+    "mood": "俏皮",
+    "camera": "纯色背景，年份由后期叠字，按当年填写。",
+    "gag": "literal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "midnight-blessing-rush",
+    "name": "零点抢发祝福",
+    "family": "newyear",
+    "aliases": [
+      "零点祝福",
+      "第一个祝福",
+      "新年第一条",
+      "抢发祝福"
+    ],
+    "beat": [
+      "主体握着手机盯着时钟，手指悬在发送键上",
+      "零点一到猛按发送，手指戳出残影，一串祝福像烟花一样冲上夜空",
+      "主体满意靠回椅子，手机还在叮叮响"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "热情",
+    "camera": "近景。",
+    "gag": "escalation",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "rp-fireworks-grow",
+    "name": "身后烟花越放越大",
+    "family": "newyear",
+    "aliases": [
+      "跨年烟花",
+      "零点烟花",
+      "新年烟花",
+      "烟花"
+    ],
+    "beat": [
+      "主体举着一杯饮料对镜头微笑，身后夜空亮起一朵小烟花",
+      "烟花越来越多越来越大，最后整个天空变成金色，主体的笑容始终不变",
+      "金光退去，夜空恢复，主体抿一口饮料"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "pet"
+    ],
+    "mood": "冷面",
+    "camera": "写实；人真实不变形，只有环境变化。",
+    "gag": "deadpan",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "fu-upside-down",
+    "name": "福字贴倒了",
+    "family": "spring",
+    "aliases": [
+      "福到了",
+      "贴福字",
+      "福倒了",
+      "倒贴福"
+    ],
+    "beat": [
+      "主体踮脚把一张福字贴到门上，仔细抹平",
+      "退后一看贴倒了，愣了一下，随即拍手大笑",
+      "主体对镜头抱拳"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "吉利",
+    "camera": "固定中景，门占画面一半。",
+    "gag": "literal",
+    "intensity": "restrained",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "blessing-machine-gun",
+    "name": "吉祥话机关枪",
+    "family": "spring",
+    "aliases": [
+      "吉祥话",
+      "新年祝福",
+      "祝福语",
+      "新春祝福"
+    ],
+    "beat": [
+      "主体深吸一口气，对镜头抱拳",
+      "嘴里像机关枪一样喷出一串金色吉祥话气泡，越喷越快，身体被反冲力推着后退",
+      "最后一个气泡卡住，主体憋红脸挤出一句恭喜发财"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "热情过头",
+    "camera": "固定中景，气泡文字由后期叠字或不写字。",
+    "gag": "escalation",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "zodiac-hop-in",
+    "name": "生肖蹦进画面",
+    "family": "spring",
+    "aliases": [
+      "生肖",
+      "本命年",
+      "生肖贺岁",
+      "属相",
+      "今年属什么"
+    ],
+    "beat": [
+      "画面中央空着，上方挂着一串红灯笼",
+      "今年的生肖小动物从画外蹦进来，戴着红围巾向镜头作揖",
+      "生肖动物蹦出画面另一侧"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "mascot",
+      "pet",
+      "object"
+    ],
+    "mood": "吉祥",
+    "camera": "固定中景；生肖按当年替换，见 zodiac-greeting 模板。",
+    "gag": "sincere",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "elder-gold-greeting",
+    "name": "长辈风闪光祝福",
+    "family": "spring",
+    "aliases": [
+      "长辈图",
+      "长辈风",
+      "祝福图",
+      "发家族群"
+    ],
+    "beat": [
+      "主体端正站在荷花和金色山水背景前，双手抱拳",
+      "背景开始旋转闪金光，四周飞出玫瑰和祥云，主体保持微笑一动不动",
+      "金光收住，主体点头"
+    ],
+    "loop": "cycle",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "真诚土味",
+    "camera": "居中对称，文字由后期叠字，配长辈问候图风格。",
+    "gag": "sincere",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "reply-full-mouth",
+    "name": "嘴里塞满回拜年",
+    "family": "spring",
+    "aliases": [
+      "同乐同乐",
+      "同喜同喜",
+      "你也是",
+      "回拜年",
+      "新年快乐你也是"
+    ],
+    "beat": [
+      "主体嘴里塞满饺子，腮帮鼓起，看到消息",
+      "急忙抱拳回礼，努力想说话只发出唔唔声，一颗饺子从嘴边掉出来",
+      "主体接住饺子塞回去，继续抱拳"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "可爱",
+    "camera": "近景。",
+    "gag": "contrast",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "bowl-for-red-packet",
+    "name": "端碗讨红包",
+    "family": "spring",
+    "aliases": [
+      "红包拿来",
+      "讨红包",
+      "红包呢",
+      "给个红包",
+      "发个红包吧"
+    ],
+    "beat": [
+      "主体双手捧着一只小碗，碗沿贴着红纸",
+      "眨巴着大眼睛把碗一点点往前推，推到镜头前，眼睛亮出星星",
+      "碗收回，主体继续眨眼"
+    ],
+    "loop": "cycle",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "撒娇",
+    "camera": "低机位，碗逐渐变大。",
+    "gag": "escalation",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "red-packet-tease-give",
+    "name": "给你发红包",
+    "family": "spring",
+    "aliases": [
+      "给你发红包",
+      "接红包",
+      "大红包",
+      "接好了"
+    ],
+    "beat": [
+      "主体郑重地从怀里掏出一个鼓鼓的红包",
+      "双手把红包递向镜头，红包闪着金光",
+      "红包停在半空"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "大方",
+    "camera": "近景，红包占前景。",
+    "gag": "sincere",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true,
+    "pair": {
+      "with": "red-packet-tease-retract",
+      "step": 1
+    }
+  },
+  {
+    "id": "red-packet-tease-retract",
+    "name": "红包又收回去",
+    "family": "spring",
+    "aliases": [
+      "骗你的",
+      "逗你玩",
+      "收回去了",
+      "没有红包"
+    ],
+    "beat": [
+      "同一个红包停在镜头前",
+      "主体手一缩，把红包塞回怀里，吐舌头笑",
+      "主体拍拍胸口的红包，转身就走"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "恶作剧",
+    "camera": "同一机位。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "close",
+    "motion": "action",
+    "photo": true,
+    "pair": {
+      "with": "red-packet-tease-give",
+      "step": 2
+    }
+  },
+  {
+    "id": "red-packet-gold-light",
+    "name": "拆红包被金光闪到",
+    "family": "spring",
+    "aliases": [
+      "谢谢红包",
+      "收到红包",
+      "红包收到",
+      "谢红包"
+    ],
+    "beat": [
+      "主体小心撕开红包的封口",
+      "一道金光从红包里射出，照得主体睁不开眼，头发被光吹向后",
+      "光散去，里面只有一张小纸条，主体照样抱拳道谢"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "期待与反转",
+    "camera": "近景。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "red-packet-refuse",
+    "name": "收红包三连推辞",
+    "family": "spring",
+    "aliases": [
+      "这怎么好意思",
+      "不用不用",
+      "太客气了"
+    ],
+    "beat": [
+      "长辈的手递来一个红包，主体连连摆手后退",
+      "嘴上说着不要不要不要，另一只手已经把红包揣进口袋",
+      "主体抱拳，笑得很乖"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "口嫌体正直",
+    "camera": "固定中景，递红包的手从画外伸入。",
+    "gag": "contrast",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "red-packet-xray",
+    "name": "对光看红包厚度",
+    "family": "spring",
+    "aliases": [
+      "看看多少",
+      "红包厚度",
+      "验红包",
+      "红包多少钱"
+    ],
+    "beat": [
+      "主体举起红包对着灯，眯起一只眼",
+      "红包变成半透明，能看见里面薄薄一张，主体面无表情",
+      "慢慢把红包放下，对镜头礼貌微笑"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "冷面",
+    "camera": "近景，逆光。",
+    "gag": "deadpan",
+    "intensity": "restrained",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "hide-in-spring-roll",
+    "name": "裹成春卷躲拜年",
+    "family": "spring",
+    "aliases": [
+      "不想拜年",
+      "不想走亲戚",
+      "过年社恐",
+      "在家躲着"
+    ],
+    "beat": [
+      "门外传来出来拜年啦的喊声，主体在床上一惊",
+      "一把卷起被子把自己裹成一根春卷，滚到床底",
+      "春卷慢慢探出一角，又缩回去"
+    ],
+    "loop": "occlusion",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "社恐",
+    "camera": "俯拍床面。",
+    "gag": "literal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "relative-triple-question",
+    "name": "亲戚三连问",
+    "family": "spring",
+    "aliases": [
+      "工资多少",
+      "有对象吗",
+      "考得怎么样",
+      "过年被问",
+      "亲戚盘问"
+    ],
+    "beat": [
+      "饭桌上三只手指向主体，头顶分别飘着工资、对象、成绩",
+      "三个问题像子弹一样飞来，主体用子弹时间向后仰，衣角飘起，一一躲开",
+      "最后一个问题绕回来轻轻碰了一下额头，主体僵住"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "闪躲",
+    "camera": "慢动作，侧面中景。",
+    "gag": "scale",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "dinner-turntable",
+    "name": "年夜饭转盘",
+    "family": "spring",
+    "aliases": [
+      "年夜饭",
+      "团圆饭",
+      "夹不到菜",
+      "转盘",
+      "吃不到"
+    ],
+    "beat": [
+      "主体握着筷子，盯着圆桌上的一盘红烧鱼",
+      "筷子刚伸出，转盘一转鱼被转走，换来一盘青菜；再伸，又转走",
+      "主体放下筷子，默默夹起面前的青菜"
+    ],
+    "loop": "cycle",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "总差一点",
+    "camera": "俯拍圆桌。",
+    "gag": "escalation",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "stay-up-toothpick",
+    "name": "守岁撑眼皮",
+    "family": "spring",
+    "aliases": [
+      "守岁",
+      "熬夜守岁",
+      "撑住",
+      "除夕熬夜"
+    ],
+    "beat": [
+      "主体坐在沙发上，眼皮越来越沉",
+      "用两根牙签撑住眼皮，头还在一点一点往下垂",
+      "一头栽进面前的瓜子盘，瓜子溅起"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "硬撑",
+    "camera": "固定中景。",
+    "gag": "escalation",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "group-blessing-slip",
+    "name": "群发祝福露馅",
+    "family": "spring",
+    "aliases": [
+      "群发祝福",
+      "祝福模板",
+      "忘改名字"
+    ],
+    "beat": [
+      "主体对着手机认真编辑一段长长的祝福，满意地按下发送",
+      "屏幕放大到最后一行，抬头写的是另一个人的名字，主体脸色一白",
+      "主体疯狂撤回，手指快成残影"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet",
+      "text"
+    ],
+    "mood": "社死",
+    "camera": "手机屏幕特写后拉回，名字由后期叠字。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "coin-dumpling-bite",
+    "name": "饺子吃到硬币",
+    "family": "spring",
+    "aliases": [
+      "吃到硬币",
+      "幸运饺子",
+      "饺子硬币",
+      "好运来了"
+    ],
+    "beat": [
+      "主体夹起一个饺子，开心咬下去",
+      "咯噔一声，门牙闪了一下，主体僵住，眼泪在眼眶打转",
+      "吐出一枚硬币高高举起，强颜欢笑"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "乐极生悲",
+    "camera": "近景。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "video-call-freeze",
+    "name": "拜年视频卡住",
+    "family": "spring",
+    "aliases": [
+      "信号不好",
+      "视频卡了",
+      "网络不好"
+    ],
+    "beat": [
+      "手机视频画面里，主体对着长辈准备说吉祥话",
+      "一张嘴画面就卡住，脸停在一个奇怪的表情上，像素块一格格掉落",
+      "画面恢复，主体若无其事地说完最后一个字"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "尴尬",
+    "camera": "手机画面内景。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "casual",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "lion-head-stuck",
+    "name": "钻进狮头卡住",
+    "family": "spring",
+    "aliases": [
+      "舞狮",
+      "醒狮",
+      "狮子头",
+      "舞龙舞狮"
+    ],
+    "beat": [
+      "主体钻进一个大红狮子头里，摇头晃脑跳了两下",
+      "狮子头卡住拔不下来，主体只露两只脚在原地乱转，狮子眼睛还在眨",
+      "狮子头一歪，向镜头点头"
+    ],
+    "loop": "cycle",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "热闹翻车",
+    "camera": "全身固定。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "belt-notch-pop",
+    "name": "过年胖了还在吃",
+    "family": "spring",
+    "aliases": [
+      "过年胖了",
+      "年后减肥",
+      "过年肥",
+      "每逢佳节胖三斤"
+    ],
+    "beat": [
+      "主体手里拿着一只鸡腿，皮带扣在第一格",
+      "每咬一口皮带就自己往外跳一格，最后皮带啪地弹飞",
+      "主体捡起皮带系在头上当发带，继续吃"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "自嘲",
+    "camera": "中景。",
+    "gag": "escalation",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "dragged-back-to-work",
+    "name": "节后被拖回工位",
+    "family": "spring",
+    "aliases": [
+      "节后上班",
+      "返工",
+      "收假上班",
+      "上班第一天",
+      "年后上班"
+    ],
+    "beat": [
+      "主体抱着老家门口的柱子，脚已经离地",
+      "一只巨大的手从画外抓住脚踝，把主体连人带柱子拖向写着工位的方向",
+      "主体被放在工位上，手里还抱着一截柱子"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "不舍",
+    "camera": "横向全景。",
+    "gag": "literal",
+    "intensity": "absurd",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "video-heart-parents",
+    "name": "视频给爸妈比心",
+    "family": "spring",
+    "aliases": [
+      "回不了家",
+      "给爸妈拜年",
+      "想家",
+      "异地过年",
+      "视频拜年"
+    ],
+    "beat": [
+      "主体在出租屋里举着手机，屏幕里是两个长辈的小头像",
+      "主体对屏幕比心，屏幕里的两个人也同时比心，三颗爱心在中间汇合",
+      "主体对着屏幕笑着擦了一下眼角"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "温暖思念",
+    "camera": "手机和人同框，暖光。",
+    "gag": "sincere",
+    "intensity": "restrained",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "holiday-shift-dumpling",
+    "name": "值班有人递饺子",
+    "family": "spring",
+    "aliases": [
+      "过节加班",
+      "春节值班",
+      "值班",
+      "加班过年"
+    ],
+    "beat": [
+      "主体一个人坐在空办公室加班，窗外有烟花",
+      "旁边伸来一只手，递过来一盒冒热气的饺子，主体抬头愣住",
+      "主体接过饺子，对画外点头"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "pet"
+    ],
+    "mood": "温暖",
+    "camera": "固定中景。",
+    "gag": "sincere",
+    "intensity": "restrained",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "couplet-with-name",
+    "name": "春联写上名字",
+    "family": "spring",
+    "aliases": [
+      "个性春联",
+      "写春联",
+      "定制春联",
+      "春联",
+      "对联"
+    ],
+    "beat": [
+      "门两边贴着空白的红色春联，横批也空着",
+      "一支毛笔从画外落下，在横批上刷地写下金字，春联两边亮起光",
+      "主体从门里探出头，对镜头抱拳"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "human",
+      "mascot",
+      "object",
+      "text"
+    ],
+    "mood": "吉祥定制",
+    "camera": "门居中构图；横批文字由后期叠字，可以写对方的名字。",
+    "gag": "sincere",
+    "intensity": "restrained",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "dumpling-vs-tangyuan",
+    "name": "饺子汤圆南北之争",
+    "family": "spring",
+    "aliases": [
+      "南北之争",
+      "吃饺子还是汤圆",
+      "饺子汤圆",
+      "甜咸之争"
+    ],
+    "beat": [
+      "一个饺子和一个汤圆隔着桌子对视，各自抱臂",
+      "两边同时冲上去用肚子互相顶，越顶越扁，旁边的醋和桂花在加油",
+      "一个春卷从中间滚过，两边一起看向它"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "object",
+      "mascot"
+    ],
+    "mood": "欢乐对峙",
+    "camera": "俯视桌面，食物拟人。",
+    "gag": "contrast",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "cat-steals-fish",
+    "name": "猫偷年夜饭的鱼",
+    "family": "spring",
+    "aliases": [
+      "猫偷鱼",
+      "年年有鱼",
+      "猫猫过年",
+      "年夜饭被偷"
+    ],
+    "beat": [
+      "年夜饭桌上一盘鱼，桌沿慢慢冒出两只猫耳",
+      "一只爪子闪电般伸出，鱼不见了，盘子里只剩一根鱼骨摆成笑脸",
+      "桌下传来满足的咀嚼声，尾巴从桌布下露出来晃了晃"
+    ],
+    "loop": "occlusion",
+    "subjects": [
+      "pet",
+      "mascot"
+    ],
+    "mood": "捣蛋",
+    "camera": "平视桌面。",
+    "gag": "reversal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
+  },
+  {
+    "id": "red-packet-runs-away",
+    "name": "红包自己跑了",
+    "family": "spring",
+    "aliases": [
+      "红包跑了",
+      "红包飞了",
+      "手慢了",
+      "没抢到红包"
+    ],
+    "beat": [
+      "一个红包放在桌上，主体伸手去拿",
+      "红包长出两条小腿，嗖地跑出画面，留下一串小脚印",
+      "主体看着空手，又看看脚印"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "object",
+      "human",
+      "mascot"
+    ],
+    "mood": "手慢",
+    "camera": "固定中景。",
+    "gag": "literal",
+    "intensity": "absurd",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "text-fu-flip",
+    "name": "福字转身倒立",
+    "family": "spring",
+    "aliases": [
+      "福字",
+      "福字动画",
+      "福气到了"
+    ],
+    "beat": [
+      "画面中央一个大大的福字端正立着",
+      "福字原地转了一圈，最后倒立停住，四周弹出金色小火花",
+      "福字晃了晃，稳稳倒立不动"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "text"
+    ],
+    "mood": "吉利",
+    "camera": "红色背景；单个福字可直接画，需要准确字形时后期叠字。",
+    "gag": "literal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "text-firecracker-scatter",
+    "name": "祝福字被鞭炮崩散",
+    "family": "spring",
+    "aliases": [
+      "新年快乐字",
+      "过年快乐",
+      "春节快乐",
+      "拜年字"
+    ],
+    "beat": [
+      "几个字安静排开，下面挂着一串小鞭炮",
+      "鞭炮噼里啪啦响，几个字被崩得四散飞起，翻着跟头",
+      "字一个个落回原位排好，最后一个落歪了，自己扶正"
+    ],
+    "loop": "reset",
+    "subjects": [
+      "text"
+    ],
+    "mood": "热闹",
+    "camera": "红色背景，文字由后期叠字。",
+    "gag": "literal",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": false
+  },
+  {
+    "id": "rp-couplet-blown-away",
+    "name": "春联被风吹走",
+    "family": "spring",
+    "aliases": [
+      "春联吹跑了",
+      "贴春联",
+      "大风天",
+      "年货飞了"
+    ],
+    "beat": [
+      "主体在门口一本正经地按住刚贴的春联，对镜头微笑",
+      "一阵大风，春联、福字、灯笼依次飞走，主体头发被吹乱，笑容不变",
+      "一只灯笼飞回来挂在主体头上"
+    ],
+    "loop": "hold",
+    "subjects": [
+      "human",
+      "pet"
+    ],
+    "mood": "冷面",
+    "camera": "写实；人真实不变形，只有环境变化。",
+    "gag": "deadpan",
+    "intensity": "exaggerated",
+    "audience": "safe",
+    "motion": "action",
+    "photo": true
   }
 ]

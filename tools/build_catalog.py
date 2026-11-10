@@ -46,9 +46,9 @@ def main():
     lines+=[f"| **{t['name']}** · `{t['id']}` | {'、'.join(t['intents'])} | {len(t['poses'])} | `{t['timing']['loop']}` | {'、'.join(t['slots'])} |" for t in templates]
     lines+=["","## 成套表情包","",
             "每个包是一组候选动作，候选数不覆盖用户本次要求或默认交付数量。","",
-            "| 表情包／ID | 候选数 | 默认风格 | 适合 |","| --- | ---: | --- | --- |"]
+            "| 表情包／ID | 候选数 | 默认风格 | 适合 | 适用时段 |","| --- | ---: | --- | --- | --- |"]
     style_names={s["id"]:s["name"] for s in styles}
-    lines+=[f"| **{p['name']}** · `{p['id']}` | {len(p['actions'])} | {style_names[p['style']]} | {p['for']} |" for p in packs]
+    lines+=[f"| **{p['name']}** · `{p['id']}` | {len(p['actions'])} | {style_names[p['style']]} | {p['for']} | {p['season']['label'] if p.get('season') else '全年'} |" for p in packs]
     lines+=["","## 动作分类","","| 场景 | 收录 |","| --- | ---: |"]
     for family,title in FAMILIES.items():
         subset=[c for c in cards if c["family"]==family]
@@ -60,7 +60,8 @@ def main():
             if card["family"]!=family:
                 continue
             tags="、".join(linked.get(card["id"],[])) or "创作提案"
-            lines.append(f"| **{card['name']}** · `{card['id']}` | {'、'.join(card['aliases'])} | {card['beat'][1]} | "
+            pair=f"（组合第 {card['pair']['step']} 张）" if card.get('pair') else ""
+            lines.append(f"| **{card['name']}**{pair} · `{card['id']}` | {'、'.join(card['aliases'])} | {card['beat'][1]} | "
                          f"{GAGS[card['gag']][0]}／{INTENSITIES[card['intensity']][0]} | {AUDIENCE_SHORT[card['audience']]} | {MOTIONS[card['motion']]} | {'可' if card['photo'] else '否'} | {tags} |")
     terms=sorted(trends["terms"],key=lambda t:t["term"])
     names={c["id"]:c["name"] for c in cards}
