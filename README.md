@@ -50,6 +50,18 @@
 
 同一张 AI 生成的写真（非真人），由 Codex 使用本技能做出的六款。
 
+### 节日样片
+
+| 平安果开箱 | 把自己挂成圣诞树 | 猫扑倒圣诞树 |
+| --- | --- | --- |
+| ![平安果开箱](examples/showcase/holidays/apple-unboxing.gif) | ![把自己挂成圣诞树](examples/showcase/holidays/self-xmas-tree.gif) | ![猫扑倒圣诞树](examples/showcase/holidays/cat-topples-tree.gif) |
+| **跨年倒数睡着了** | **年份数字换岗** | **饺子汤圆南北之争** |
+| ![跨年倒数睡着了](examples/showcase/holidays/countdown-asleep.gif) | ![年份数字换岗](examples/showcase/holidays/text-year-kick.gif) | ![饺子汤圆南北之争](examples/showcase/holidays/dumpling-vs-tangyuan.gif) |
+| **收红包三连推辞** | **给你发红包 ①** | **红包又收回去 ②** |
+| ![收红包三连推辞](examples/showcase/holidays/red-packet-refuse.gif) | ![给你发红包 ①](examples/showcase/holidays/red-packet-tease-give.gif) | ![红包又收回去 ②](examples/showcase/holidays/red-packet-tease-retract.gif) |
+
+圣诞、跨年和春节各一组。①② 是组合表情，要连着发；“收红包三连推辞”的参考图是 AI 生成的写真（非真人）。
+
 ### 没有参考图也能做
 
 | 裂开了 | 累扁了 | 好耶！ |
